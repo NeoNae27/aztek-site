@@ -1,0 +1,14 @@
+.services {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cardStack {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 столбца */
+    grid-template-rows: repeat(2, auto); /* 2 строки */
+    gap: 16px; /* расстояние между элементами */
+  }
+}

@@ -1,0 +1,7 @@
+export { default as Logo } from "./Logo/Logo.jsx";
+export { default as Button } from "./Buttons/Button.jsx";
+export { default as Phone } from "./Phone/Phone.jsx";
+export { default as List } from "./List/List.jsx";
+export { default as SectionArticle } from "./Text/Articles/SectionArticle.jsx";
+export { default as ExtraButton } from "./Buttons/ExtraButton/ExtraButton.jsx";
+export { default as ServiceCard } from "./Cards/ServiceCard/ServiceCard.jsx";

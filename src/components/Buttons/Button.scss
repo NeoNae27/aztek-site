@@ -1,0 +1,37 @@
+button {
+  max-width: fit-content;
+  max-height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 40px;
+
+  border: 0;
+}
+
+.outline {
+  background-color: transparent;
+  border: 2px solid var(--color-gray-100);
+  color: var(--color-gray-100);
+}
+
+.outline:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-gray-100);
+  color: var(--color-white);
+}
+
+.outline:active {
+  background-color: var(--color-gray-500);
+  color: var(--color-white);
+}
+
+.color {
+  background-color: var(--color-primary-500);
+  color: var(--color-gray-100);
+}
+
+.color:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-primary-700);
+}

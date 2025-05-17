@@ -1,0 +1,21 @@
+.extraButton {
+  min-height: 224px;
+  min-width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 24px 24px;
+
+  p {
+    color: var(--color-gray-400);
+  }
+
+  &.one {
+    background-image: url("/src/assets/extra1.png");
+  }
+
+  &.two {
+    background-image: url("/src/assets/extra2.png");
+  }
+}

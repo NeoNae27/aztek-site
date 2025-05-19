@@ -37,7 +37,8 @@ const About = () => {
           </span>
         </span>
         <span className="buttonsArea">
-          
+          <ExtraButton title="Projects" subtitle="See our portfolio" backgroundImg="./src/assets/extra1.png" />
+          <ExtraButton title="Service" subtitle="See our services" backgroundImg="./src/assets/extra2.png" />
         </span>
       </div>
     </section>

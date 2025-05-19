@@ -1,10 +1,12 @@
 .list {
+  display: flex;
+  flex-direction: column;
   li {
-    width: fit-content;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    width: fit-content;
+  }
 
+  ul {
     gap: 8px;
   }
 }

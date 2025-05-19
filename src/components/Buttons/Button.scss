@@ -1,10 +1,11 @@
 button {
+  display: flex;
   max-width: fit-content;
   max-height: fit-content;
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px 40px;
+  cursor: pointer;
 
   border: 0;
 }

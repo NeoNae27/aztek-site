@@ -1,6 +1,4 @@
 .about {
-  
-  
   .content {
     display: flex;
     flex-direction: row;
@@ -32,6 +30,13 @@
     .doubleList {
       display: flex;
       gap: 48px;
+    }
+
+    .buttonsArea {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
     }
   }
 }

@@ -1,9 +1,13 @@
 .serviceCard {
-    display: flex;
-    width: 360px;
-    height: 500px;
+  display: flex;
+  width: 360px;
+  height: 500px;
+  padding: 24px;
 
-    h5 {
-        color: var(--color-gray-700);
-    }
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  h5 {
+    color: var(--color-gray-100);
+  }
 }

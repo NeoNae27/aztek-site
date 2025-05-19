@@ -13,9 +13,14 @@ const Services = () => {
           />
           <Button label="See More" size="button-md" type="color" />
         </div>
-        <div className="cardStack">
-          <ServiceCard text="Text" />
-        </div>
+        {/* <div className="cardStack">
+          <ServiceCard title="Text" backgroundImg="./src/assets/cardsImgs/ship.png" />
+          <ServiceCard title="Text" backgroundImg="./src/assets/cardsImgs/ship.png" />
+          <ServiceCard title="Text" backgroundImg="./src/assets/cardsImgs/ship.png" />
+          <ServiceCard title="Text" backgroundImg="./src/assets/cardsImgs/ship.png" />
+          <ServiceCard title="Text" backgroundImg="./src/assets/cardsImgs/ship.png" />
+          <ServiceCard title="Text" backgroundImg="./src/assets/cardsImgs/ship.png" />  
+        </div> */}
       </div>
     </section>
   );

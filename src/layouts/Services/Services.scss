@@ -6,6 +6,7 @@
   }
 
   .cardStack {
+
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 столбца */
     grid-template-rows: repeat(2, auto); /* 2 строки */

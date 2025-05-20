@@ -3,7 +3,7 @@ import { Phone, Logo } from "@components";
 import { useState, useEffect } from "react";
 
 const Header = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
@@ -27,11 +27,8 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden"; // Блокируем прокрутку при открытом меню
-    } else {
-      document.body.style.overflow = ""; // Возвращаем прокрутку при закрытом меню
-    }
+    // Prevent body scroll when menu is open
+    document.body.style.overflow = isMenuOpen ? "hidden" : "";
   }, [isMenuOpen]);
 
   const toggleMenu = () => {
@@ -41,13 +38,13 @@ const Header = () => {
   return (
     <>
       <header className={`header ${isMenuOpen ? "menu-open" : ""}`}>
-        <div className="content">
+        <div className="header__content">
           <Logo />
 
-          {/* Desktop Navigation  */}
+          {/* Desktop Navigation */}
           {!isMobile && (
             <>
-              <nav>
+              <nav aria-label="Main Navigation">
                 <ul className="nav-list">
                   {navItems.map((item) => (
                     <li key={item.name} className="nav-item">
@@ -62,30 +59,34 @@ const Header = () => {
             </>
           )}
 
-          {/* Mobile Menu */}
+          {/* Mobile Menu Button */}
           {isMobile && (
-            <button className="" onClick={toggleMenu} width="24" height="24">
-              <img
-                src="./src/assets/hamburger.svg"
-                width="24"
-                height="24"
-              ></img>
+            <button 
+              className="menu-toggle" 
+              onClick={toggleMenu}
+              aria-expanded={isMenuOpen}
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            >
+              <span className={`hamburger ${isMenuOpen ? "active" : ""}`}>
+                <span className="hamburger__line"></span>
+                <span className="hamburger__line"></span>
+                <span className="hamburger__line"></span>
+              </span>
             </button>
           )}
         </div>
       </header>
 
-      {/* Mobile Menu Dropdown */}
-
-      {isMobile && isMenuOpen && (
-        <div className={`mobile-menu-container ${isMenuOpen ? "open" : ""}`}>
-          <nav className="navMenu">
-            <ul className="mobile-nav-list">
+      {/* Mobile Menu Dropdown - Using conditional rendering with CSS for animation */}
+      {isMobile && (
+        <div className={`mobile-menu ${isMenuOpen ? "mobile-menu--open" : ""}`}>
+          <nav className="mobile-menu__nav" aria-label="Mobile Navigation">
+            <ul className="mobile-menu__list">
               {navItems.map((item) => (
-                <li key={item.name} className="mobile-nav-item">
+                <li key={item.name} className="mobile-menu__item">
                   <a
                     href={item.url}
-                    className="caption"
+                    className="mobile-menu__link caption"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
@@ -93,7 +94,9 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-            <Phone />
+            <div className="mobile-menu__phone">
+              <Phone />
+            </div>
           </nav>
         </div>
       )}

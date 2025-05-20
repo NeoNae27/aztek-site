@@ -1,46 +1,93 @@
 @import "./shared/colors.scss";
 @import "./shared/typography.scss";
 
-* {
+// Breakpoint variables
+$breakpoint-mobile: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--color-gray-100);
   color: var(--color-gray-700);
+  line-height: 1.5;
+  min-height: 100vh;
 }
 
+// Global section styling
 section {
   width: 100%;
   border-bottom: 2px solid var(--color-special-shadow);
-  
+
   .content {
     max-width: 1280px;
     padding: 96px 80px;
     margin: 0 auto;
-    gap: 64px;
-
-
     display: flex;
     flex-direction: column;
+
+    @media (max-width: $breakpoint-tablet) {
+      padding: 80px 56px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      padding: 48px 24px;
+    }
   }
+
+  // Old code
+  // @media (max-width: 425px) {
+  //   padding: 24px;
+  // }
 }
 
+// Global link styling
 a {
-  text-decoration: none; 
+  text-decoration: none;
   color: inherit;
+  transition: color 0.2s ease;
 }
 
-ul {
-  list-style: none;  
-  margin: 0;         
+ul, 
+ol {
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
 
 li {
   margin: 0;
   padding: 0;
+}
+
+// Button reset
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  padding: 0;
+}
+
+// Image handling
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

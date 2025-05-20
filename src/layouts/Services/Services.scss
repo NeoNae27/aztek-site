@@ -6,10 +6,9 @@
   }
 
   .cardStack {
-
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 столбца */
-    grid-template-rows: repeat(2, auto); /* 2 строки */
+    grid-template-columns: repeat(2, 1fr); /* 3 столбца */
+    grid-template-rows: repeat(3, auto); /* 2 строки */
     gap: 16px; /* расстояние между элементами */
   }
 }

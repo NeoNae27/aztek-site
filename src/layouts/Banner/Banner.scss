@@ -1,9 +1,23 @@
-.headliner {
-  h2 {
+@import "/src/styles.scss";
+
+.banner {
+  &__content {
+    @include content;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__headliner {
+    margin-bottom: 64px;
+  }
+
+  &__title {
     color: var(--color-gray-100);
   }
 
-  h4 {
+  &__subtitle {
     color: var(--color-gray-100);
     opacity: 0.5;
   }

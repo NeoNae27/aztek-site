@@ -1,22 +1,26 @@
-import { useHover } from "@uidotdev/usehooks";
 import "./ExtraButton.scss";
 
+/**
+ * ExtraButton component with hover effect
+ * @param {Object} props Component props
+ * @param {string} props.title Button title
+ * @param {string} props.subtitle Button subtitle
+ * @param {string} props.backgroundImg URL for background image
+ * @returns {JSX.Element} ExtraButton component
+ */
 const ExtraButton = ({ title, subtitle, backgroundImg }) => {
-  const [ref, isHovered] = useHover();
-
   return (
     <button
-      ref={ref}
-      className={`extraButton ${isHovered ? "hovered" : ""}`}
+      className="extra-button"
       style={{
         backgroundImage: `url(${backgroundImg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="textContainer">
-        <h5 className="title">{title}</h5>
-        <p className="subtitle1">{subtitle}</p>
+      <div className="extra-button__content">
+        <h5 className="extra-button__title">{title}</h5>
+        <p className="extra-button__subtitle subtitle1">{subtitle}</p>
       </div>
     </button>
   );

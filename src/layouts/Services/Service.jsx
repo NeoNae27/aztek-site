@@ -1,27 +1,38 @@
-import "./Services.scss";
 import { SectionArticle, Button, ServiceCard } from "@components";
-import cardsInfo from "../../assets/serviceCards.json";
+import serviceCardData from "../../assets/serviceCards.json";
+import "./Services.scss";
 
+/**
+ * Services section displaying service cards and header
+ * @returns {JSX.Element} Services component
+ */
 const Services = () => {
   return (
     <section className="services">
-      <div className="services__content">
-        <div className="header">
+      <div className="services__container">
+        <header className="services__header">
           <SectionArticle
             title="Our Services"
-            subtitle="We provide a wide range of services.
-                    From small to fundamental works"
+            subtitle="We provide a wide range of services. From small to fundamental works"
           />
-          <Button label="See More" size="button-md" type="color" />
-        </div>
-        <div className="cardStack">
-          {cardsInfo.map((item) => (
+          <div className="services__desktop-button">
+            <Button label="See More" size="button-md" type="color" />
+          </div>
+        </header>
+        
+        <div className="services__card-grid">
+          {serviceCardData.map(({ title, backgroundImg, description }) => (
             <ServiceCard
-              key={item.title}
-              title={item.title}
-              backgroundImg={item.backgroundImg}
+              key={title}
+              title={title}
+              backgroundImg={backgroundImg}
+              description={description || "Learn more about our premium services"}
             />
           ))}
+        </div>
+        
+        <div className="services__mobile-button">
+          <Button label="See More" size="button-md" type="color" />
         </div>
       </div>
     </section>

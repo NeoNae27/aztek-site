@@ -25,11 +25,17 @@
     }
   }
 
-  h3 {
+  h3 { // Replaced h2 for mobile
     font-family: var(--font-family);
     font-size: 32px;
     line-height: 48px;
     font-weight: 600;
+
+    @media (max-width: 425px) {
+      font-size: 18px; // Adjusted size for consistency
+      line-height: 28px;
+      font-weight: 600;
+    }
   }
 
   h4 {

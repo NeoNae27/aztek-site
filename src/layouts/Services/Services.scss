@@ -1,48 +1,64 @@
 @import "/src/styles.scss";
 
 .services {
-  &__content {
+  &__container {
     @include content;
-    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; // 48px
   }
 
-  .header {
+  &__header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+  }
 
-    button {
-      @media (max-width: $breakpoint-mobile) {
-        display: none;
-      }
+  &__desktop-button {
+    display: block;
+    
+    @media (max-width: $breakpoint-mobile) {
+      display: none;
     }
   }
 
-  .cardStack {
+  &__mobile-button {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+    
+    @media (max-width: $breakpoint-mobile) {
+      display: block;
+    }
+  }
+
+  &__card-grid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     justify-content: center;
     align-items: start;
     justify-items: center;
-    gap: 16px;
+    gap: 1rem; // 16px
 
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-
+    // Large screens
     @media (min-width: $breakpoint-HD) {
-      .serviceCard {
+      .service-card {
         width: 360px;
         height: 500px;
       }
     }
 
+    // Tablet and below - horizontal scrolling
     @media (max-width: $breakpoint-tablet) {
       display: flex;
       justify-content: flex-start;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
-      gap: 16px;
-
-      .serviceCard {
+      
+      .service-card {
         flex: 0 0 auto;
         scroll-snap-align: start;
         width: 300px;

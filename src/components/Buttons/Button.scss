@@ -36,3 +36,9 @@ button {
   transition: all 0.3s ease-in-out;
   background-color: var(--color-primary-700);
 }
+
+.button-arrow {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}

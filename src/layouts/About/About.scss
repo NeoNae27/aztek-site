@@ -59,18 +59,8 @@
 
   @media (max-width: $breakpoint-desktop) {
     &__content {
-      flex-direction: column;
-      gap: 80px;
-
       .buttonsArea {
-        min-width: 100%;
-        flex-direction: row;
-        justify-content: center;
-      }
-
-      .extraButton {
-        flex: 1;
-        max-width: none;
+        display: none;
       }
     }
   }

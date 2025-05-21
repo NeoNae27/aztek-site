@@ -4,7 +4,7 @@ import { ExtraButton, List } from "@components";
 const About = () => {
   return (
     <section className="about">
-      <div className="content">
+      <div className="about__content">
         <span className="textArea">
           <article>
             <h2>Bigger, Better, Faster And Stronger Projects</h2>

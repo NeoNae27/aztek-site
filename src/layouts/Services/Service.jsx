@@ -5,7 +5,7 @@ import cardsInfo from "../../assets/serviceCards.json";
 const Services = () => {
   return (
     <section className="services">
-      <div className="content">
+      <div className="services__content">
         <div className="header">
           <SectionArticle
             title="Our Services"

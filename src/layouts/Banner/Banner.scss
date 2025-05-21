@@ -7,6 +7,12 @@
     justify-content: center;
     position: relative;
     z-index: 1;
+
+    @media (max-width: $breakpoint-mobile) {
+      text-align: center;
+      align-items: center;
+      padding: 96px 56px;
+    }
   }
 
   &__headliner {

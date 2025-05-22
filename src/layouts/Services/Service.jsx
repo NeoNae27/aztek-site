@@ -8,7 +8,7 @@ import "./Services.scss";
  */
 const Services = () => {
   return (
-    <section className="services">
+    <section id="services" className="services">
       <div className="services__container">
         <header className="services__header">
           <SectionArticle

@@ -7,7 +7,7 @@ const Projects = () => {
   const projectsSlice = projects.slice(0, 3);
 
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <div className="projects__container">
         <header className="projects__header">
           <SectionArticle

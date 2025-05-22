@@ -1,17 +1,20 @@
 import "./Header.scss";
-import { Phone, Logo } from "@components";
+import { Phone, Logo, LanguageSwitcher } from "@components";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18n.js";
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const navItems = [
-    { name: "Home", url: "/" },
-    { name: "Company", url: "/about" },
-    { name: "Services", url: "/services" },
-    { name: "Portfolio", url: "/portfolio" },
-    { name: "Contact", url: "/contact" },
+    { name: t("nav.home"), url: "/" },
+    { name: t("nav.company"), url: "/about" },
+    { name: t("nav.services"), url: "#services" },
+    { name: t("nav.portfolio"), url: "#projects" },
+    { name: t("nav.contact"), url: "#contacts" },
   ];
 
   useEffect(() => {
@@ -53,6 +56,9 @@ const Header = () => {
                       </a>
                     </li>
                   ))}
+                  <li className="header__language nav-item ">
+                    <LanguageSwitcher />
+                  </li>
                 </ul>
               </nav>
               <Phone />
@@ -61,8 +67,8 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           {isMobile && (
-            <button 
-              className="menu-toggle" 
+            <button
+              className="menu-toggle"
               onClick={toggleMenu}
               aria-expanded={isMenuOpen}
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}

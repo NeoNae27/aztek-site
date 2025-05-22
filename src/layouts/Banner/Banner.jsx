@@ -1,7 +1,10 @@
 import "./Banner.scss";
 import { Button } from "@components";
+import { useTranslation, Trans } from "react-i18next";
 
 const Section = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="banner">
       <div className="banner__content">
@@ -9,14 +12,14 @@ const Section = () => {
           <h2 className="banner__title">
             Where Engineering <br /> Meets Enterprise
           </h2>
-          <h4 className="banner__subtitle">Powering Industry Since 2004</h4>
+          <h4 className="banner__subtitle">{t("banner.subtitle")}</h4>
         </div>
         <div className="banner__buttons">
           <Button
-            label="OUR PROJECTS"
+            label={t("banner.button")}
             size="button-lg"
             type="outline"
-            aria-label="View our projects"
+            aria-label={t("banner.button")}
           />
         </div>
       </div>

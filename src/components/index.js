@@ -6,3 +6,4 @@ export { default as SectionArticle } from "./Text/Articles/SectionArticle.jsx";
 export { default as ExtraButton } from "./Buttons/ExtraButton/ExtraButton.jsx";
 export { default as ServiceCard } from "./Cards/ServiceCard/ServiceCard.jsx";
 export { default as ProjectCard } from "./Cards/ProjectCard/ProjectCard.jsx";
+export { default as LanguageSwitcher } from "./LanguageSwitcher/LanguageSwitcher.jsx";

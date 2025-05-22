@@ -8,7 +8,7 @@ import { SectionArticle, Phone } from "@components";
  */
 const Contacts = () => {
   return (
-    <section className="contacts">
+    <section id="#contacts" className="contacts">
       <div className="contacts__container">
         <header className="contacts__header">
           <SectionArticle

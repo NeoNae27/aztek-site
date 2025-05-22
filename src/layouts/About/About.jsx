@@ -1,25 +1,22 @@
 import "./About.scss";
 import { ExtraButton, List } from "@components";
+import { useTranslation } from "react-i18next";
 import extra1 from "../../assets/extra1.webp";
 import extra2 from "../../assets/extra2.webp";
 
-
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="about">
       <div className="about__content">
         <span className="textArea">
           <article>
-            <h2>Bigger, Better, Faster And Stronger Projects</h2>
+            <h2>{t("about.title")}</h2>
             <p className="body1">
-              Since 2004, we've specialized in the installation and maintenance
-              of technical systems — ventilation, painting, reconstruction, and
-              more. With a focus on quality craftsmanship and efficiency, we
-              serve both residential and commercial clients across a wide range
-              of industries.
+              {t("about.text1")}
               <br /> <br />
-              Rely on our experience to support your projects with precision,
-              reliability, and a commitment to long-term performance.
+              {t("about.text2")}
             </p>
           </article>
           <span className="doubleList">
@@ -40,8 +37,16 @@ const About = () => {
           </span>
         </span>
         <span className="buttonsArea">
-          <ExtraButton title="Projects" subtitle="See our portfolio" backgroundImg={extra1} />
-          <ExtraButton title="Service" subtitle="See our services" backgroundImg={extra2} />
+          <ExtraButton
+            title={t("about.extraButton1.title")}
+            subtitle={t("about.extraButton1.subtitle")}
+            backgroundImg={extra1}
+          />
+          <ExtraButton
+            title={t("about.extraButton2.title")}
+            subtitle={t("about.extraButton2.subtitle")}
+            backgroundImg={extra2}
+          />
         </span>
       </div>
     </section>

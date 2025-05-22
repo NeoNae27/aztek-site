@@ -1,13 +1,15 @@
-@import "/src/styles.scss";
+@use "../../styles.scss";
 
 .about {
   &__content {
-    @include content;
-    display: flex;
-    flex-direction: row;
-    max-width: 1280px;
+    @include styles.container;
+    & {
+      display: flex;
+      flex-direction: row;
+      max-width: 1280px;
 
-    justify-content: space-between;
+      justify-content: space-between;
+    }
 
     .textArea {
       display: flex;
@@ -15,7 +17,7 @@
       width: 600px;
       gap: 48px;
 
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: styles.$BREAKPOINT_MOBILE) {
         max-width: 100%;
       }
     }
@@ -39,7 +41,7 @@
       display: flex;
       gap: 48px;
 
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: styles.$BREAKPOINT_MOBILE) {
         max-width: 377px;
         gap: 24px;
       }
@@ -51,13 +53,13 @@
       justify-content: flex-start;
       gap: 16px;
 
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: styles.$BREAKPOINT_MOBILE) {
         display: none;
       }
     }
   }
 
-  @media (max-width: $breakpoint-desktop) {
+  @media (max-width: styles.$BREAKPOINT_DESKTOP) {
     &__content {
       .buttonsArea {
         display: none;

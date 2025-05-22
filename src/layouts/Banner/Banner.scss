@@ -1,14 +1,16 @@
-@import "/src/styles.scss";
+@use "../../styles.scss";
 
 .banner {
   &__content {
-    @include content;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
+    @include styles.container;
+    & {
+      align-items: flex-start;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
 
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: styles.$BREAKPOINT_MOBILE) {
       text-align: center;
       align-items: center;
       padding: 96px 56px;

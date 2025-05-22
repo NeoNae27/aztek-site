@@ -1,11 +1,13 @@
-@import "/src/styles.scss";
+@use "../../styles.scss";
 
 .services {
   &__container {
-    @include content;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
+    @include styles.container;
+    & {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
   }
 
   &__header {
@@ -17,8 +19,8 @@
 
   &__desktop-button {
     display: block;
-    
-    @media (max-width: $breakpoint-mobile) {
+
+    @media (max-width: styles.$BREAKPOINT_MOBILE) {
       display: none;
     }
   }
@@ -26,8 +28,8 @@
   &__mobile-button {
     display: none;
     text-align: center;
-    
-    @media (max-width: $breakpoint-mobile) {
+
+    @media (max-width: styles.$BREAKPOINT_MOBILE) {
       display: flex;
     }
   }
@@ -41,7 +43,7 @@
     gap: 16px;
 
     // Large screens
-    @media (min-width: $breakpoint-HD) {
+    @media (min-width: styles.$BREAKPOINT_HD) {
       .service-card {
         width: 360px;
         height: 500px;
@@ -49,13 +51,13 @@
     }
 
     // Tablet and below - horizontal scrolling
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: styles.$BREAKPOINT_TABLET) {
       display: flex;
       justify-content: flex-start;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
-      
+
       .service-card {
         flex: 0 0 auto;
         scroll-snap-align: start;

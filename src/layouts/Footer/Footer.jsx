@@ -48,7 +48,7 @@ const Footer = () => {
             <p className="body2">Privacy Policy</p>
           </div>
           <div className="author">
-            <a className="body2">Made by Nick</a>
+            <a href="https://github.com/NeoNae27" className="body2">Made by Nick</a>
           </div>
         </span>
       </div>

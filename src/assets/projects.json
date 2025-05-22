@@ -2,13 +2,13 @@
   {
     "title": "BP operated BosShelf yard",
     "projectType": "construction",
-    "projectImg": "/projectsImg/project1.webp",
+    "projectImg": "./projectsImg/project1.webp",
     "description": "Together with Tukish/ Austrian partner Alfa/ Zeman Celik succesfully  completes several  complex projects in BP  operated BosShelf yard  including excavation,  concrete works, steel  structures, cladding, fit out and MEP works."
   },
   {
     "title": "Lukoil Petrol Station",
     "projectType": "maintenance",
-    "projectImg": "/projectsImg/project2.webp",
+    "projectImg": "./projectsImg/project2.webp",
     "description": "Annual maintenance and service contract with  Lukoil covering Petrol Stations, Petrol Terminal and other facilities"
   },
   {

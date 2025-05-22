@@ -49,7 +49,7 @@
     }
 
     // Tablet and below - horizontal scrolling
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: $breakpoint-HD) {
       display: flex;
       justify-content: flex-start;
       overflow-x: auto;

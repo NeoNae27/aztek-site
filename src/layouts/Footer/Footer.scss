@@ -1,0 +1,58 @@
+@import "/src/styles.scss";
+
+.footer {
+  background-color: var(--color-primary-700);
+
+  &__container {
+    @include content;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint-mobile) {
+      flex-direction: column;
+      gap: 48px;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .body2 {
+    color: var(--color-primary-500);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 300px;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    color: var(--color-gray-100);
+    gap: 16px;
+
+    a {
+      height: 24px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+
+    @media (max-width: $breakpoint-mobile) {
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+}

@@ -2,19 +2,19 @@
   {
     "title": "BP operated BosShelf yard",
     "projectType": "construction",
-    "projectImg": "./src/assets/projectsImg/project1.png",
+    "projectImg": "/projectsImg/project1.webp",
     "description": "Together with Tukish/ Austrian partner Alfa/ Zeman Celik succesfully  completes several  complex projects in BP  operated BosShelf yard  including excavation,  concrete works, steel  structures, cladding, fit out and MEP works."
   },
   {
     "title": "Lukoil Petrol Station",
     "projectType": "maintenance",
-    "projectImg": "./src/assets/projectsImg/project2.png",
+    "projectImg": "/projectsImg/project2.webp",
     "description": "Annual maintenance and service contract with  Lukoil covering Petrol Stations, Petrol Terminal and other facilities"
   },
   {
     "title": "Pasha Holding | PMD | FMG ",
     "projectType": "construction | maintenance | repair works",
-    "projectImg": "./src/assets/projectsImg/project3.png",
+    "projectImg": "/projectsImg/project3.webp",
     "description": "Wide range of  construction,  maintenance and  repair works for Pasha  Holding, PMD, FMG including construction  of warehouse, road  construction and and  renovation  works  including HVAC and MEP"
   },
   {

@@ -1,5 +1,8 @@
 import "./About.scss";
 import { ExtraButton, List } from "@components";
+import extra1 from "../../assets/extra1.webp";
+import extra2 from "../../assets/extra2.webp";
+
 
 const About = () => {
   return (
@@ -37,8 +40,8 @@ const About = () => {
           </span>
         </span>
         <span className="buttonsArea">
-          <ExtraButton title="Projects" subtitle="See our portfolio" backgroundImg="./src/assets/extra1.png" />
-          <ExtraButton title="Service" subtitle="See our services" backgroundImg="./src/assets/extra2.png" />
+          <ExtraButton title="Projects" subtitle="See our portfolio" backgroundImg={extra1} />
+          <ExtraButton title="Service" subtitle="See our services" backgroundImg={extra2} />
         </span>
       </div>
     </section>

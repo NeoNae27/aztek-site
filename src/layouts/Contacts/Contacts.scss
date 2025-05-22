@@ -1,0 +1,101 @@
+@import "/src/styles.scss";
+
+.contacts {
+  background-color: var(--color-primary-700);
+  border-bottom: 2px solid var(--color-primary-600);
+
+  &__container {
+    @include content;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  &__header {
+    .section-article {
+      color: var(--color-gray-100);
+    }
+
+    .subtitle1 {
+      color: var(--color-primary-200);
+    }
+  }
+
+  &__area {
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+
+    @media (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__block {
+    align-self: stretch;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background: #00297a;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 48px;
+    display: inline-flex;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint-desktop) {
+      width: 100%;
+      flex-direction: row;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    flex: 1 1 auto;
+    align-self: stretch;
+    position: relative;
+
+    background-image: url("@assets/contacts-pic.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: $breakpoint-desktop) {
+      display: none;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 230px;
+    gap: 8px;
+  }
+
+  &__title {
+    color: var(--color-gray-100);
+  }
+
+  .body1 {
+    color: var(--color-primary-200);
+    max-width: 230px;
+  }
+
+  img {
+    align-self: stretch;
+    position: relative;
+    height: 100%;
+  }
+}

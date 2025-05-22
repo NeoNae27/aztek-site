@@ -1,11 +1,12 @@
 import "./List.scss";
+import okIcon from "../../assets/icons/ok.svg";
 
 const List = ({ listElements }) => {
   return (
     <ul className="list">
       {listElements.map((element, index) => (
         <li key={index} className="subtitle2">
-          <img src="./src/assets/icons/ok.svg" width="24" height="24" />
+          <img src={okIcon} width="24" height="24" />
           <p>{element}</p>
         </li>
       ))}

@@ -1,32 +1,32 @@
 [
   {
     "title": "Equipment rental",
-    "backgroundImg": "./src/assets/servicesImg/ship.png",
+    "backgroundImg": "/servicesImg/ship.webp",
     "description": "description"
   },
   {
     "title": "Construction and Repair works",
-    "backgroundImg": "./src/assets/servicesImg/building.png",
+    "backgroundImg": "/servicesImg/building.webp",
     "description": "description"
   },
   {
     "title": "Manpower supply",
-    "backgroundImg": "./src/assets/servicesImg/wiring.png",
+    "backgroundImg": "/servicesImg/wiring.webp",
     "description": "description"
   },
   {
     "title": "Engineering",
-    "backgroundImg": "./src/assets/servicesImg/metal.png",
+    "backgroundImg": "/servicesImg/metal.webp",
     "description": "description"
   },
   {
     "title": "Maintenance and Service",
-    "backgroundImg": "./src/assets/servicesImg/smartSys.png",
+    "backgroundImg": "/servicesImg/smartSys.webp",
     "description": "description"
   },
   {
     "title": "Materials supply",
-    "backgroundImg": "./src/assets/servicesImg/roof.png",
+    "backgroundImg": "/servicesImg/roof.webp",
     "description": "description"
   }
 ]

@@ -9,17 +9,17 @@ const About = () => {
 
   return (
     <section className="about">
-      <div className="about__content">
-        <span className="textArea">
-          <article>
-            <h2>{t("about.title")}</h2>
-            <p className="body1">
+      <div className="about__container">
+        <span className="about__textArea">
+          <article className="about__article">
+            <h2 className="about__article--title">{t("about.title")}</h2>
+            <p className="about__article--text body1">
               {t("about.text1")}
               <br /> <br />
               {t("about.text2")}
             </p>
           </article>
-          <span className="doubleList">
+          <span className="about__doubleList">
             <List
               listElements={[
                 "High quality of work",
@@ -36,7 +36,7 @@ const About = () => {
             />
           </span>
         </span>
-        <span className="buttonsArea">
+        <span className="about__buttonsArea">
           <ExtraButton
             title={t("about.extraButton1.title")}
             subtitle={t("about.extraButton1.subtitle")}

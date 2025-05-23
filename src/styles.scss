@@ -82,10 +82,19 @@ img {
   flex-direction: column;
 
   @media (max-width: $BREAKPOINT_TABLET) {
-    padding: 80px 56px;
+    padding: $SPACING-4XL $SPACING-3XL;
   }
 
   @media (max-width: $BREAKPOINT_MOBILE) {
-    padding: 48px 24px;
+    padding: $SPACING-2XL $SPACING-LG;
   }
+}
+
+@mixin bg-cover($image: null) {
+  @if $image {
+    background-image: url($image);
+  }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

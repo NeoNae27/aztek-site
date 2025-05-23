@@ -1,0 +1,34 @@
+{
+  "list": [
+    {
+      "title": "Equipment rental",
+      "backgroundImg": "./servicesImg/ship.webp",
+      "description": "description"
+    },
+    {
+      "title": "Construction and Repair works",
+      "backgroundImg": "./servicesImg/building.webp",
+      "description": "description"
+    },
+    {
+      "title": "Manpower supply",
+      "backgroundImg": "./servicesImg/wiring.webp",
+      "description": "description"
+    },
+    {
+      "title": "Engineering",
+      "backgroundImg": "./servicesImg/metal.webp",
+      "description": "description"
+    },
+    {
+      "title": "Maintenance and Service",
+      "backgroundImg": "./servicesImg/smartSys.webp",
+      "description": "description"
+    },
+    {
+      "title": "Materials supply",
+      "backgroundImg": "./servicesImg/roof.webp",
+      "description": "description"
+    }
+  ]
+}

@@ -33,5 +33,10 @@
       "title": "Xidmət",
       "subtitle": "Xidmətlərimizə baxın"
     }
-  }
+  },
+  "service": {
+    "title": "Xidmətlər",
+    "subtitle": "Biz geniş spektrli xidmətlər təqdim edirik. Kiçikdən fundamental işlərə qədər"
+  },
+  "seeMore": "Daha çox"
 }

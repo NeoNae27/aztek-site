@@ -4,16 +4,28 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 import translationEn from "./locales/en/translation.json";
 import translationAz from "./locales/az/translation.json";
+import servicesEn from "./locales/en/services.json";
+import servicesAz from "./locales/az/services.json";
+import projectsEn from "./locales/en/projects.json";
+import projectsAz from "./locales/az/projects.json";
 
 i18n
-  .use(LanguageDetector) 
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
-      en: { translation: translationEn },
-      az: { translation: translationAz },
+      en: {
+        translation: translationEn,
+        services: servicesEn,
+        projects: projectsEn,
+      },
+      az: {
+        translation: translationAz,
+        services: servicesAz,
+        projects: projectsAz,
+      },
     },
-    fallbackLng: "en", // язык по умолчанию, если не найден
+    fallbackLng: "en", // Default language if the user language is not available
 
     interpolation: {
       escapeValue: false,

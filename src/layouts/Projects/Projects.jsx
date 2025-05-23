@@ -1,6 +1,6 @@
 import { SectionArticle, Button, ProjectCard } from "@components";
 import "./Projects.scss";
-import projects from "../../assets/projects.json";
+import projects from "../../assets/content/projects.json";
 
 const Projects = () => {
 

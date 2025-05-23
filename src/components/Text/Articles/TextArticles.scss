@@ -8,6 +8,10 @@
 
   .subtitle1 {
     color: var(--color-gray-500);
-    max-width: 290px;
+    max-width: 360px;
+
+    @media (max-width: 426px) {
+      max-width: 250px;
+    }
   }
 }

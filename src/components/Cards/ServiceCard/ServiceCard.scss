@@ -42,10 +42,10 @@
 
   // Description styling
   &__description {
+    display: none;
     color: var(--color-primary-200);
-
+;
     opacity: 0;
-    transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
 
@@ -56,17 +56,18 @@
     }
 
     .service-card__content {
-      transform: translateY(-60%);
+      justify-content: flex-start;
     }
 
     .service-card__title {
-      transform: translateY(0);
+      justify-content: flex-start;
       margin-bottom: 8px;
     }
 
     .service-card__description {
+      display: block;
       opacity: 1;
-      transform: translateY(0);
+      justify-content: flex-start;
     }
   }
 }

@@ -1,8 +1,8 @@
 import "./About.scss";
 import { ExtraButton, List } from "@components";
 import { useTranslation } from "react-i18next";
-import extra1 from "../../assets/extra1.webp";
-import extra2 from "../../assets/extra2.webp";
+import extra1 from "../../assets/buttons/extra1.webp";
+import extra2 from "../../assets/buttons/extra2.webp";
 
 const About = () => {
   const { t } = useTranslation();

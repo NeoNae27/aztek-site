@@ -2,32 +2,32 @@
   "list": [
     {
       "title": "Avadanlıq icarəsi",
-      "backgroundImg": "./servicesImg/ship.webp",
+      "backgroundImg": "./servicesImg/1.webp",
       "description": "Bütün layihə ehtiyaclarınız üçün peşəkar avadanlıq icarəsi xidmətləri"
     },
     {
       "title": "Tikinti və təmir işləri",
-      "backgroundImg": "./servicesImg/building.webp",
+      "backgroundImg": "./servicesImg/2.webp",
       "description": "Tam tikinti və təmir həlləri"
     },
     {
       "title": "İşçi qüvvəsi təminatı",
-      "backgroundImg": "./servicesImg/wiring.webp",
+      "backgroundImg": "./servicesImg/3.webp",
       "description": "Müxtəlif sənaye sahələri üçün ixtisaslı işçi qüvvəsi təminatı"
     },
     {
       "title": "Mühəndislik",
-      "backgroundImg": "./servicesImg/metal.webp",
+      "backgroundImg": "./servicesImg/4.webp",
       "description": "Peşəkar mühəndislik həlləri və layihələndirmə xidmətləri"
     },
     {
       "title": "Texniki xidmət və servis",
-      "backgroundImg": "./servicesImg/smartSys.webp",
+      "backgroundImg": "./servicesImg/5.webp",
       "description": "Keyfiyyətli texniki xidmət və servis dəstəyi"
     },
     {
       "title": "Material təminatı",
-      "backgroundImg": "./servicesImg/roof.webp",
+      "backgroundImg": "./servicesImg/6.webp",
       "description": "Yüksək keyfiyyətli tikinti materialları təminatı"
     }
   ]

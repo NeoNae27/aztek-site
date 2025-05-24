@@ -1,3 +1,5 @@
+@use "../../../shared/variables.scss" as *;
+
 .card-article,
 .section-article {
   display: flex;
@@ -10,7 +12,7 @@
     color: var(--color-gray-500);
     max-width: 360px;
 
-    @media (max-width: 426px) {
+    @media (max-width: $BREAKPOINT_MOBILE) {
       max-width: 250px;
     }
   }

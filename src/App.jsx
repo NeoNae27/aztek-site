@@ -1,11 +1,39 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router";
 import MainPage from "./pages/MainPage.jsx";
+import PortfolioPage from "./pages/PortfolioPage.jsx";
+
+// Component to handle scrolling to hash
+function ScrollToHash() {
+  const location = useLocation();
+  
+  useEffect(() => {
+    if (location.hash) {
+      // Small delay to ensure the page has rendered
+      setTimeout(() => {
+        const element = document.getElementById(location.hash.slice(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [location]);
+  
+  return null;
+}
 
 function App() {
   return (
-    <>
-      <MainPage />
-    </>
+    <BrowserRouter>
+      <ScrollToHash />
+      <Routes>
+        <Route index element={<MainPage />} />
+        <Route path="about" element={<PortfolioPage />} />
+        <Route path="portfolio" element={<PortfolioPage />} />
+        <Route path="services" element={<PortfolioPage />} />
+        {/* Remove the #contacts route - it's not needed */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

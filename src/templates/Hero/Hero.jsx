@@ -1,14 +1,21 @@
-import './Hero.scss';
-import Header from '../../layouts/Header/Header.jsx';
-import Section from '../../layouts/Banner/Banner.jsx';
+import "./Hero.scss";
+import Header from "../../layouts/Header/Header.jsx";
+import Banner from "../../layouts/Banner/Banner.jsx";
 
-const Hero = () => {
-    return (
-        <div className='hero'> 
-            <Header />
-            <Section />
-        </div>
-    )
-}
+const Hero = ({ backgroundImage, title, subtitle, buttonText }) => {
+  return (
+    <div
+      className="hero"
+      style={{ backgroundImage: {backgroundImage} }}
+    >
+      <Header />
+      <Banner
+        title={title}
+        subtitle={subtitle}
+        buttonText={buttonText}
+      />
+    </div>
+  );
+};
 
-export default Hero
+export default Hero;

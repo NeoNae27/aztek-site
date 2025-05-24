@@ -17,12 +17,13 @@
     }
   }
 
-  &__headliner {
-    margin-bottom: 64px;
+  &__button {
+    margin-top: 64px;
   }
 
   &__title {
     color: var(--color-gray-100);
+    max-width: 500px;
   }
 
   &__subtitle {

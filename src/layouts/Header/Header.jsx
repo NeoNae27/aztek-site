@@ -1,6 +1,7 @@
 import "./Header.scss";
 import { Phone, Logo, LanguageSwitcher } from "@components";
 import { useState, useEffect } from "react";
+import { Link } from 'react-router';
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n.js";
 
@@ -12,9 +13,9 @@ const Header = () => {
   const navItems = [
     { name: t("nav.home"), url: "/" },
     { name: t("nav.company"), url: "/about" },
-    { name: t("nav.services"), url: "#services" },
-    { name: t("nav.portfolio"), url: "#projects" },
-    { name: t("nav.contact"), url: "#contacts" },
+    { name: t("nav.services"), url: "/services" },
+    { name: t("nav.portfolio"), url: "/portfolio" },
+    { name: t("nav.contact"), url: "/#contacts" },
   ];
 
   useEffect(() => {
@@ -51,9 +52,9 @@ const Header = () => {
                 <ul className="nav-list">
                   {navItems.map((item) => (
                     <li key={item.name} className="nav-item">
-                      <a href={item.url} className="caption">
+                      <Link to={item.url} className="caption">
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                   <li className="header__language nav-item ">
@@ -90,13 +91,13 @@ const Header = () => {
             <ul className="mobile-menu__list">
               {navItems.map((item) => (
                 <li key={item.name} className="mobile-menu__item">
-                  <a
-                    href={item.url}
+                  <Link
+                    to={item.url}
                     className="mobile-menu__link caption"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <li className="mobile-menu__link nav-item ">

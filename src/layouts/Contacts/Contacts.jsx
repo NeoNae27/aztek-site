@@ -10,7 +10,7 @@ const Contacts = () => {
   const { t } = useTranslation(["translation", "services"]);
 
   return (
-    <section id="#contacts" className="contacts">
+    <section id="contacts" className="contacts">
       <div className="contacts__container">
         <header className="contacts__header">
           <SectionArticle

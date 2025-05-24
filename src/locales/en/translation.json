@@ -6,7 +6,7 @@
     "portfolio": "Portfolio",
     "contact": "Contact"
   },
-  "banner": {
+  "mainBanner": {
     "title": "Where Engineering <1>Meets Enterprise</1>",
     "subtitle": "Powering Industry Since 2004",
     "button": "OUR PROJECTS"

@@ -16,10 +16,10 @@ const Projects = () => {
             subtitle={t("projects.subtitle")}
           />
           <div className="projects__desktop-button">
-            <Button label={t("seeMore")} size="button-md" type="color" />
+            <Button label={t("seeMore")} size="button-md" type="color" href="/portfolio" />
           </div>
           <div className="services__mobile-button">
-            <Button size="button-arrow" type="color" />
+            <Button size="button-arrow" type="color" href="/portfolio" />
           </div>
         </header>
         <div className="projects__card-grid">

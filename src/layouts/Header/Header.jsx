@@ -99,6 +99,9 @@ const Header = () => {
                   </a>
                 </li>
               ))}
+              <li className="mobile-menu__link nav-item ">
+                <LanguageSwitcher />
+              </li>
             </ul>
             <div className="mobile-menu__phone">
               <Phone />

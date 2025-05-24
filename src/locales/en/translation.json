@@ -38,5 +38,23 @@
     "title": "Services",
     "subtitle": "We provide a wide range of services. From small to fundamental works"
   },
-  "seeMore": "See More"
+  "seeMore": "See More",
+  "projects": {
+    "title": "Projects",
+    "subtitle": "We provide a wide range of services. From small to fundamental works"
+  },
+  "contacts": {
+    "title": "Contacts Us",
+    "subtitle": "We are here to help you with your projects. Get in touch with us!",
+    "address" : {
+      "title": "OUR LOCATION",
+      "text": "AZ1065, Bakı şəhəri, Azərbaycan, Bakıxanov küçəsi, 6, Bridge Plaza, 4-cü mərtəbə" 
+    },
+    "email": {
+      "title": "CONTACTS"
+    },
+    "phone": {
+      "text": "We will get back to you within 24 hours, or call us every day, 09:00 - 24:00"
+    }
+  }
 }

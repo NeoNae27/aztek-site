@@ -1,3 +1,4 @@
+import { memo } from "react";
 import "./ExtraButton.scss";
 
 /**
@@ -8,7 +9,7 @@ import "./ExtraButton.scss";
  * @param {string} props.backgroundImg URL for background image
  * @returns {JSX.Element} ExtraButton component
  */
-const ExtraButton = ({ title, subtitle, backgroundImg }) => {
+const ExtraButton = memo(({ title, subtitle, backgroundImg }) => {
   return (
     <button
       className="extra-button"
@@ -24,6 +25,6 @@ const ExtraButton = ({ title, subtitle, backgroundImg }) => {
       </div>
     </button>
   );
-};
+});
 
 export default ExtraButton;

@@ -13,20 +13,20 @@
   },
   {
     "title": "Pasha Holding | PMD | FMG ",
-    "projectType": "construction | maintenance | repair works",
+    "projectType": "maintenance",
     "projectImg": "/projectsImg/project3.webp",
     "description": "Wide range of  construction,  maintenance and  repair works for Pasha  Holding, PMD, FMG including construction  of warehouse, road  construction and and  renovation  works  including HVAC and MEP"
   },
   {
     "title": "Project1",
-    "projectType": "type1",
-    "projectImg": "",
+    "projectType": "construction",
+    "projectImg": "/public/projectsImg/blank.png",
     "description": ""
   },
   {
-    "title": "Project1",
-    "projectType": "type1",
-    "projectImg": "",
+    "title": "Project2",
+    "projectType": "repair works",
+    "projectImg": "/public/projectsImg/blank.png",
     "description": ""
   }
 ]

@@ -1,0 +1,29 @@
+@use "../../styles.scss";
+
+.gallery {
+  &__container {
+    @include styles.container;
+    & {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+  }
+
+  &__cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    justify-content: center;
+    align-items: start;
+    justify-items: center;
+    gap: 16px;
+
+    // Large screens
+    @media (min-width: styles.$BREAKPOINT_HD) {
+      .project-card {
+        width: 360px;
+        height: 500px;
+      }
+    }
+  }
+}

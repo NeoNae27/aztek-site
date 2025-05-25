@@ -81,6 +81,7 @@ img {
   display: flex;
   flex-direction: column;
 
+
   @media (max-width: $BREAKPOINT_TABLET) {
     padding: $SPACING-4XL $SPACING-3XL;
   }

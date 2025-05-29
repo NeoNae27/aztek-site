@@ -34,19 +34,8 @@ const Gallery = () => {
     <section className="gallery">
       <div className="gallery__container">
         <nav className="gallery__navigation">
-          {/* Hamburger button for mobile */}
-          <button 
-            className="gallery__hamburger"
-            onClick={toggleMobileMenu}
-            aria-label="Toggle navigation menu"
-          >
-            <span className={`gallery__hamburger-line ${isMobileMenuOpen ? 'gallery__hamburger-line--open' : ''}`}></span>
-            <span className={`gallery__hamburger-line ${isMobileMenuOpen ? 'gallery__hamburger-line--open' : ''}`}></span>
-            <span className={`gallery__hamburger-line ${isMobileMenuOpen ? 'gallery__hamburger-line--open' : ''}`}></span>
-          </button>
-          
           {/* Navigation links */}
-          <div className={`gallery__nav-links ${isMobileMenuOpen ? 'gallery__nav-links--open' : ''}`}>
+          <div className={`gallery__nav-links`}>
             {projectTypes.map((type) => (
               <a
                 key={type}

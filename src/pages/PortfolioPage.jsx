@@ -1,8 +1,11 @@
-import Hero from "../templates/Hero/Hero.jsx";
-import Gallery from "../layouts/Gallery/Gallery.jsx";
-import heroImage from "/src/assets/portfolio-hero-img.png";
+import { Hero } from "@templates";
+import { Gallery } from "@layouts";
+import { useTranslation } from "react-i18next";
+import heroImage from "@assets/portfolio-hero-img.png";
 
 const PortfolioPage = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Hero

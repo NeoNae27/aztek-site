@@ -46,7 +46,7 @@
     @media (min-width: styles.$BREAKPOINT_HD) {
       .project-card {
         width: 360px;
-        height: 500px;
+        height: fit-content;
       }
     }
 

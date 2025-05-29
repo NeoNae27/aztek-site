@@ -27,8 +27,9 @@ function App() {
       <ScrollToHash />
       <Routes>
         <Route index element={<MainPage />} />
-        <Route path="about" element={<PortfolioPage />} />
         <Route path="portfolio" element={<PortfolioPage />} />
+        {/* TODO; replace with actual AboutPage component */}
+        <Route path="about" element={<PortfolioPage />} /> 
         <Route path="services" element={<PortfolioPage />} />
       </Routes>
     </BrowserRouter>

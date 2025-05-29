@@ -5,7 +5,7 @@
   justify-content: flex-start;
 
   width: 360px;
-  height: 500px;
+  min-height: fit-content;
   border: 2px solid var(--color-gray-700);
 
   &__content {
@@ -22,9 +22,12 @@
     color: var(--color-primary-500);
   }
 
-  // &__image {
-  //   max-height: 315px;
-  // }
+  &__image {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 
   &__description {
     display: -webkit-box;

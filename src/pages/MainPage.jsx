@@ -1,7 +1,7 @@
 import { Hero } from "@templates";
 import { About, Services, Projects, Contacts, Footer } from "@layouts";
 import { useTranslation } from "react-i18next";
-import heroImage from "/src/assets/hero-pic.webp";
+import heroImage from "@assets/hero-pic.webp";
 
 const MainPage = () => {
   const { t } = useTranslation();

@@ -3,9 +3,29 @@ import projects from "../../assets/content/projects.json";
 import { ProjectCard } from "@components";
 import { useState, useMemo } from "react";
 
+// Skeleton component for loading state
+const ProjectCardSkeleton = () => (
+  <div className="project-card project-card--skeleton">
+    <div className="project-card__image">
+      <div className="project-card__skeleton-image"></div>
+    </div>
+    <div className="project-card__content">
+      <header className="project-card__header">
+        <div className="skeleton-line skeleton-line--title"></div>
+        <div className="skeleton-line skeleton-line--subtitle"></div>
+      </header>
+      <div className="skeleton-text">
+        <div className="skeleton-line skeleton-line--text"></div>
+        <div className="skeleton-line skeleton-line--text"></div>
+        <div className="skeleton-line skeleton-line--text skeleton-line--short"></div>
+      </div>
+    </div>
+  </div>
+);
+
 const Gallery = () => {
   const [selectedType, setSelectedType] = useState("all");
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   // Get unique project types
   const projectTypes = useMemo(() => {
@@ -20,15 +40,24 @@ const Gallery = () => {
     return projects.filter((project) => project.projectType === selectedType);
   }, [selectedType]);
 
-  const handleTypeChange = (e, type) => {
+  const handleTypeChange = async (e, type) => {
     e.preventDefault();
+    if (selectedType === type) return;
+    
+    setIsLoading(true);
     setSelectedType(type);
-    setIsMobileMenuOpen(false); // Close mobile menu when item is selected
+    
+    // Simulate loading delay for better UX
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 100);
   };
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  // Generate skeleton cards based on expected number of items
+  const skeletonCount = Math.min(filteredProjects.length || 6, 6);
+  const skeletonCards = Array.from({ length: skeletonCount }, (_, index) => (
+    <ProjectCardSkeleton key={`skeleton-${index}`} />
+  ));
 
   return (
     <section className="gallery">
@@ -50,18 +79,23 @@ const Gallery = () => {
             ))}
           </div>
         </nav>
+        
         <div className="gallery__cards-grid">
-          {filteredProjects.map(
-            ({ title, projectType, projectImg, description }) => (
-              <ProjectCard
-                key={title}
-                title={title}
-                projectType={projectType}
-                projectImg={projectImg}
-                description={
-                  description || "Learn more about our premium services"
-                }
-              />
+          {isLoading ? (
+            skeletonCards
+          ) : (
+            filteredProjects.map(
+              ({ title, projectType, projectImg, description }) => (
+                <ProjectCard
+                  key={title}
+                  title={title}
+                  projectType={projectType}
+                  projectImg={projectImg}
+                  description={
+                    description || "Learn more about our premium services"
+                  }
+                />
+              )
             )
           )}
         </div>

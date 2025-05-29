@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router";
 import MainPage from "./pages/MainPage.jsx";
 import PortfolioPage from "./pages/PortfolioPage.jsx";
 
+
 function ScrollToHash() {
   const location = useLocation();
 

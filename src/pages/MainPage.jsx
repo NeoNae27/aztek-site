@@ -1,7 +1,11 @@
+import { lazy, Suspense } from "react";
+
 import { Hero } from "@templates";
-import { About, Services, Projects, Contacts, Footer } from "@layouts";
+import { About, Projects, Contacts, Footer } from "@layouts";
 import { useTranslation } from "react-i18next";
 import heroImage from "@assets/hero-pic.webp";
+
+const Services = lazy(() => import(`../layouts/Services/Service.jsx`));
 
 const MainPage = () => {
   const { t } = useTranslation();
@@ -15,7 +19,11 @@ const MainPage = () => {
         buttonText={t("mainBanner.button")}
       />
       <About />
-      <Services />
+      <Suspense
+        fallback={<div className="caption1 lazyload">Loading Gallery...</div>}
+      >
+        <Services />
+      </Suspense>
       <Projects />
       <Contacts />
       <Footer />

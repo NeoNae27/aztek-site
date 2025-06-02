@@ -54,9 +54,9 @@
 
     &--active {
       color: var(--color-primary-500);
-      
+
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -74,7 +74,7 @@
       &--active {
         color: var(--color-gray-100);
         background-color: var(--color-primary-400);
-        
+
         &::after {
           display: none;
         }
@@ -94,7 +94,8 @@
     // Large screens
     @media (max-width: styles.$BREAKPOINT_HD) {
       .project-card {
-        width: 424px;
+        width: 100%;
+        height: fit-content;
       }
     }
 
@@ -105,7 +106,21 @@
       align-items: center;
 
       .project-card {
-        max-width: 100%;
+        width: 100%;
+        min-height: fit-content;
+        flex-direction: row;
+      }
+    }
+
+    @media (max-width: styles.$BREAKPOINT_MOBILE) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .project-card {
+        width: 100%;
+        min-height: fit-content;
+        flex-direction: column;
       }
     }
   }

@@ -92,7 +92,7 @@ const Gallery = () => {
                   projectType={projectType}
                   projectImg={projectImg}
                   description={
-                    description || "Learn more about our premium services"
+                    description || "Learn more about our services"
                   }
                 />
               )

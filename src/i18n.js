@@ -8,6 +8,9 @@ import servicesEn from "./locales/en/services.json";
 import servicesAz from "./locales/az/services.json";
 import projectsEn from "./locales/en/projects.json";
 import projectsAz from "./locales/az/projects.json";
+import companyEn from './locales/en/company.json';
+import companyAz from './locales/az/company.json';
+
 
 i18n
   .use(LanguageDetector)
@@ -18,11 +21,13 @@ i18n
         translation: translationEn,
         services: servicesEn,
         projects: projectsEn,
+        company: companyEn,
       },
       az: {
         translation: translationAz,
         services: servicesAz,
         projects: projectsAz,
+        company: companyAz,
       },
     },
     fallbackLng: "en", // Default language if the user language is not available

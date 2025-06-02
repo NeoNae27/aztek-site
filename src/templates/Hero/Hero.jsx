@@ -10,7 +10,7 @@ const Hero = ({ backgroundImage, title, subtitle, buttonText }) => {
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <Header />
-      <Banner title={title} subtitle={subtitle} buttonText={buttonText} />
+      <Banner title={title} subtitle={subtitle} buttonText={buttonText} buttonHref="/portfolio" />
     </div>
   );
 };

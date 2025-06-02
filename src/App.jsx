@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router";
 import MainPage from "./pages/MainPage.jsx";
 import PortfolioPage from "./pages/PortfolioPage.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
 
 
 function ScrollToHash() {
@@ -29,8 +30,7 @@ function App() {
       <Routes>
         <Route index element={<MainPage />} />
         <Route path="portfolio" element={<PortfolioPage />} />
-        {/* TODO; replace with actual AboutPage component */}
-        <Route path="about" element={<PortfolioPage />} /> 
+        <Route path="about" element={<AboutPage />} /> 
         <Route path="services" element={<PortfolioPage />} />
       </Routes>
     </BrowserRouter>

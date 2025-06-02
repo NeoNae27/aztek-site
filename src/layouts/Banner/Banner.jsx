@@ -1,7 +1,7 @@
 import "./Banner.scss";
 import { Button } from "@components";
 
-const Banner = ({ title, subtitle, buttonText }) => {
+const Banner = ({ title, subtitle, buttonText, buttonHref }) => {
   return (
     <section className="banner">
       <div className="banner__content">
@@ -20,6 +20,7 @@ const Banner = ({ title, subtitle, buttonText }) => {
               size="button-lg"
               type="outline"
               aria-label={buttonText}
+              href={buttonHref}
             />
           </div>
         ) : (

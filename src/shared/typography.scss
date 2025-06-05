@@ -1,144 +1,151 @@
 /* Inter Font Family */
+@use "./variables.scss" as *;
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
 
 :root {
   --font-family: "Inter", sans-serif;
+}
 
-  /* Headliners */
-  h1 {
-    font-family: var(--font-family);
-    font-size: 64px;
-    line-height: 80px;
+/* Headliners */
+h1 {
+  font-family: var(--font-family);
+  font-size: 4rem;
+  line-height: 5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: var(--font-family);
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 700;
+  transition: font-size 0.3s ease, line-height 0.3s ease;
+
+  @media (max-width: $BREAKPOINT_MOBILE) {
+    font-size: 2rem;
+    line-height: 3rem;
     font-weight: 600;
   }
+}
 
-  h2 {
-    font-family: var(--font-family);
-    font-size: 48px;
-    line-height: 64px;
-    font-weight: 700;
+h3 {
+  font-family: var(--font-family);
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 600;
+  transition: font-size 0.3s ease, line-height 0.3s ease;
 
-    @media (max-width: 425px) {
-      font-size: 32px;
-      line-height: 48px;
-      font-weight: 600;
-    }
-  }
-
-  h3 {
-    // Replaced h2 for mobile
-    font-family: var(--font-family);
-    font-size: 32px;
-    line-height: 48px;
-    font-weight: 600;
-
-    @media (max-width: 425px) {
-      font-size: 18px; // Adjusted size for consistency
-      line-height: 28px;
-      font-weight: 600;
-    }
-  }
-
-  h4 {
-    font-family: var(--font-family);
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 600;
-
-    @media (max-width: 425px) {
-      font-size: 18px;
-      line-height: 28px;
-      font-weight: 600;
-    }
-  }
-
-  h5 {
-    font-family: var(--font-family);
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-
-  h6 {
-    font-family: var(--font-family);
-    font-size: 18px;
-    line-height: 28px;
+  @media (max-width: $BREAKPOINT_MOBILE) {
+    font-size: 1.1rem;
+    line-height: 1.75rem;
     font-weight: 600;
   }
+}
 
-  /* Texts */
-  .subtitle1 {
-    font-family: var(--font-family);
-    font-size: 16px;
-    line-height: 24px;
+h4 {
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+
+  @media (max-width: $BREAKPOINT_MOBILE) {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     font-weight: 600;
   }
+}
 
-  .subtitle2 {
-    font-family: var(--font-family);
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 600;
+h5 {
+  font-family: var(--font-family);
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-family: var(--font-family);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+/* Texts */
+.subtitle1 {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+
+  @media (max-width: $BREAKPOINT_MOBILE) {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
   }
+}
 
-  .body1 {
-    font-family: var(--font-family);
-    font-size: 16px;
-    line-height: 24px;
+.subtitle2 {
+  font-family: var(--font-family);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+}
+
+.body1 {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+
+  @media (max-width: 425px) {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
     font-weight: 400;
-
-    @media (max-width: 425px) {
-      font-size: 14px;
-      line-height: 22px;
-      font-weight: 400;
-    }
   }
+}
 
-  .body2 {
-    font-family: var(--font-family);
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 400;
-  }
+.body2 {
+  font-family: var(--font-family);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+}
 
-  .caption {
-    font-family: var(--font-family);
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
+.caption {
+  font-family: var(--font-family);
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 
-  .overline {
-    font-family: var(--font-family);
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-  }
+.overline {
+  font-family: var(--font-family);
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
 
-  /* Buttons */
-  .button-lg {
-    font-family: var(--font-family);
-    font-size: 15px;
-    line-height: 26px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
+/* Buttons */
+.button-lg {
+  font-family: var(--font-family);
+  font-size: 0.938rem;
+  line-height: 1.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-  .button-md {
-    font-family: var(--font-family);
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
-  }
+.button-md {
+  font-family: var(--font-family);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
 
-  .button-sm {
-    font-family: var(--font-family);
-    font-size: 13px;
-    line-height: 22px;
-    font-weight: 700;
-  }
+.button-sm {
+  font-family: var(--font-family);
+  font-size: 0.813rem;
+  line-height: 1.375rem;
+  font-weight: 700;
 }

@@ -1,9 +1,20 @@
+import { memo } from "react";
 import "./Button.scss";
+import { Link } from 'react-router';
 import classNames from "classnames";
 
-const Button = ({ label, size, type, color }) => {
+/**
+ * Button component that renders a button with different styles based on props.
+ * @param {Object} props - The properties for the button.
+ * @param {string} props.label - The text to display on the button.
+ * @param {string} props.size - The size of the button (e.g., "button-md", "button-arrow").
+ * @param {string} props.type - The type of the button (e.g., "color", "outline").
+ * @param {string} props.href - The link to the page
+ */
+const Button = memo(({ label, size, type, href}) => {
   return (
-    <button className={classNames("button", [size], [type], [color])}>
+    <Link to={href}>
+    <button className={classNames("button", [size], [type])}>
       {size === "button-arrow" ? (
         <>
           <span className="button__text">{label}</span>
@@ -29,7 +40,8 @@ const Button = ({ label, size, type, color }) => {
         label
       )}
     </button>
+    </Link>
   );
-};
+});
 
 export default Button;

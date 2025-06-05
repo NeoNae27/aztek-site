@@ -1,0 +1,29 @@
+@use "../../styles.scss";
+
+.company {
+  &__container {
+    @include styles.container;
+    & {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__textArea {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    max-width: 100%;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &--text {
+      color: var(--color-gray-400);
+      padding: 16px 0px;
+    }
+  }
+}

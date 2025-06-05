@@ -1,16 +1,29 @@
-import Hero from "../templates/Hero/Hero.jsx";
-import About from "../layouts/About/About.jsx";
-import Services from "../layouts/Services/Service.jsx";
-import Projects from "../layouts/Projects/Projects.jsx";
-import Contacts from "../layouts/Contacts/Contacts.jsx";
-import Footer from "../layouts/Footer/Footer.jsx";
+import { lazy, Suspense } from "react";
+
+import { Hero } from "@templates";
+import { About, Projects, Contacts, Footer } from "@layouts";
+import { useTranslation } from "react-i18next";
+import heroImage from "@assets/hero-pic.webp";
+
+const Services = lazy(() => import(`../layouts/Services/Service.jsx`));
 
 const MainPage = () => {
+  const { t } = useTranslation("mainPage");
+
   return (
     <>
-      <Hero />
+      <Hero
+        backgroundImage={heroImage}
+        title={"Where Engineering Meets Enterprise"}
+        subtitle={t("mainBanner.subtitle")}
+        buttonText={t("mainBanner.button")}
+      />
       <About />
-      <Services />
+      <Suspense
+        fallback={<div className="caption1 lazyload">Loading Gallery...</div>}
+      >
+        <Services />
+      </Suspense>
       <Projects />
       <Contacts />
       <Footer />

@@ -1,0 +1,27 @@
+{
+  "about": {
+    "title": "Bigger, Better, Faster And Stronger Projects",
+    "extraButton1": {
+      "title": "Projects",
+      "subtitle": "See our works"
+    },
+    "extraButton2": {
+      "title": "Service",
+      "subtitle": "See our services"
+    }
+  },
+  "listElements1": [
+    "High quality of work",
+    "100% Guarantee",
+    "Professional staff"
+  ],
+  "listElements2": [
+    "Individual approach",
+    "High Level of Security",
+    "Modern equipment"
+  ],
+  "paragraphs": [
+    "Since 2004, we've specialized in the installation and maintenance of technical systems — ventilation, painting, reconstruction, and more. With a focus on quality craftsmanship and efficiency, we serve both residential and commercial clients across a wide range industries. ",
+    "Rely on our experience to support your projects with precision, reliability, and a commitment to long-term performance."
+  ]
+}

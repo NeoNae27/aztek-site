@@ -1,0 +1,23 @@
+{
+  "about": {
+    "title": "Daha Böyük, Keyfiyyətli, Sürətli və Uğurlu Layihələr",
+    "extraButton1": {
+      "title": "Layihələr",
+      "subtitle": "Portfoliomuza baxın"
+    },
+    "extraButton2": {
+      "title": "Xidmət",
+      "subtitle": "Xidmətlərimizə baxın"
+    }
+  },
+  "listElements1": [
+    "Yüksək Keyfiyyətli İş",
+    "100% Zəmanət",
+    "Peşəkar Mütəxəssislər"
+  ],
+  "listElements2": ["Fərdi Yanaşma", "Təhlükəsizlik", "Müasir Avadanlıqlar"],
+  "paragraphs": [
+    "2004-cü ildən biz texniki sistemlərin quraşdırılması və texniki xidmətində - ventilyasiya, rəngləmə, yenidənqurma və s. üzrə ixtisaslaşmışıq. Keyfiyyətli sənətkarlığa və səmərəliliyə diqqət yetirərək, biz geniş sənaye sahələrində həm yaşayış, həm də kommersiya müştərilərinə xidmət göstəririk. ",
+    "Layihələrinizi dəqiqlik, etibarlılıq və uzunmüddətli performans öhdəliyi ilə dəstəkləmək üçün təcrübəmizə etibar edin."
+  ]
+}

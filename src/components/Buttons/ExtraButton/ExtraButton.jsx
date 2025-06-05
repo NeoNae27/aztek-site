@@ -1,14 +1,15 @@
+import { memo } from "react";
 import "./ExtraButton.scss";
 
 /**
- * ExtraButton component with hover effect
+ * Extra large buttons
  * @param {Object} props Component props
  * @param {string} props.title Button title
  * @param {string} props.subtitle Button subtitle
  * @param {string} props.backgroundImg URL for background image
  * @returns {JSX.Element} ExtraButton component
  */
-const ExtraButton = ({ title, subtitle, backgroundImg }) => {
+const ExtraButton = memo(({ title, subtitle, backgroundImg }) => {
   return (
     <button
       className="extra-button"
@@ -18,12 +19,12 @@ const ExtraButton = ({ title, subtitle, backgroundImg }) => {
         backgroundPosition: "center",
       }}
     >
-      <div className="extra-button__content">
+      <div className="extra-button__container">
         <h5 className="extra-button__title">{title}</h5>
         <p className="extra-button__subtitle subtitle1">{subtitle}</p>
       </div>
     </button>
   );
-};
+});
 
 export default ExtraButton;

@@ -1,20 +1,14 @@
-// Breakpoint variables
-$breakpoint-mobile: 425px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1024px;
+@use "../../styles.scss";
 
-// Header styles
 .header {
-  width: 100%;
-  border-bottom: 1px solid var(--color-special-shadow);
-  position: relative;
-  z-index: 100;
-  transition: background-color 0.3s ease;
-
-  &.menu-open {
-    background-color: var(--color-primary-700);
+  & {
+    width: 100%;
+    border-bottom: 1px solid var(--color-special-shadow);
+    position: relative;
+    z-index: 100;
+    transition: background-color 0.3s ease;
   }
-
+  
   &__content {
     display: flex;
     justify-content: space-between;
@@ -23,17 +17,18 @@ $breakpoint-desktop: 1024px;
     padding: 24px 80px;
     margin: 0 auto;
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: styles.$BREAKPOINT_DESKTOP) {
       padding: 24px 56px;
     }
-
-    @media (max-width: $breakpoint-mobile) {
+    
+    @media (max-width: styles.$BREAKPOINT_MOBILE) {
       padding: 24px;
     }
   }
+  
 
-  &__language {
-    
+  &.menu-open {
+    background-color: var(--color-primary-700);
   }
 }
 
@@ -75,7 +70,7 @@ $breakpoint-desktop: 1024px;
   justify-content: space-between;
   width: 24px;
   height: 18px;
-  
+
   &__line {
     display: block;
     width: 100%;
@@ -84,17 +79,17 @@ $breakpoint-desktop: 1024px;
     border-radius: 2px;
     transition: all 0.3s ease;
   }
-  
+
   &.active {
     .hamburger__line {
       &:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
       }
-      
+
       &:nth-child(2) {
         opacity: 0;
       }
-      
+
       &:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
       }
@@ -116,14 +111,14 @@ $breakpoint-desktop: 1024px;
   visibility: hidden;
   opacity: 0;
   transition: transform 0.4s ease, opacity 0.3s ease, visibility 0s 0.4s;
-  
+
   &--open {
     transform: translateY(0);
     visibility: visible;
     opacity: 1;
     transition: transform 0.4s ease, opacity 0.3s ease, visibility 0s 0s;
   }
-  
+
   &__nav {
     display: flex;
     flex-direction: column;
@@ -131,7 +126,7 @@ $breakpoint-desktop: 1024px;
     padding: 24px 32px;
     height: calc(100% - 80px);
   }
-  
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -139,7 +134,7 @@ $breakpoint-desktop: 1024px;
     width: 100%;
     margin-bottom: 48px;
   }
-  
+
   &__item {
     display: flex;
     justify-content: center;
@@ -148,19 +143,19 @@ $breakpoint-desktop: 1024px;
     height: 48px;
     border-bottom: 1px solid var(--color-primary-600);
   }
-  
+
   &__link {
     color: var(--color-gray-100);
     display: block;
     width: 100%;
     text-align: center;
     padding: 12px 0;
-    
+
     &:hover {
       color: var(--color-primary-300);
     }
   }
-  
+
   &__phone {
     margin-top: auto;
   }

@@ -5,9 +5,9 @@ import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t } = useTranslation("navigation");
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { t } = useTranslation();
 
   const navItems = [
     { name: t("nav.home"), url: "/" },
@@ -29,8 +29,8 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Prevent body scroll when menu is open
   useEffect(() => {
-    // Prevent body scroll when menu is open
     document.body.style.overflow = isMenuOpen ? "hidden" : "";
   }, [isMenuOpen]);
 

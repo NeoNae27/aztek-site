@@ -6,7 +6,8 @@ import heroImage from "@assets/about-hero-img.jpg";
 const AboutPage = () => {
   const { t } = useTranslation(["company"]);
   const paragraphs = t("aboutText", { returnObjects: true });
-  
+  console.log(paragraphs);
+
   return (
     <>
       <Hero

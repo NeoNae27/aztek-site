@@ -8,7 +8,7 @@ import heroImage from "@assets/hero-pic.webp";
 const Services = lazy(() => import(`../layouts/Services/Service.jsx`));
 
 const MainPage = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("mainPage");
 
   return (
     <>

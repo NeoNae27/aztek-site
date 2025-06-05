@@ -1,20 +1,6 @@
 {
-  "nav": {
-    "home": "Home",
-    "company": "Company",
-    "services": "Services",
-    "portfolio": "Portfolio",
-    "contact": "Contact"
-  },
-  "mainBanner": {
-    "title": "Where Engineering <1>Meets Enterprise</1>",
-    "subtitle": "Powering Industry Since 2004",
-    "button": "OUR PROJECTS"
-  },
+ 
   "about": {
-    "title": "Bigger, Better, Faster And Stronger Projects",
-    "text1": "Since 2004, we've specialized in the installation and maintenance of technical systems — ventilation, painting, reconstruction, and more. With a focus on quality craftsmanship and efficiency, we serve both residential and commercial clients across a wide range industries. ",
-    "text2": "Rely on our experience to support your projects with precision, reliability, and a commitment to long-term performance.",
     "listElems1": [
       "High quality of work",
       "100% Guarantee",

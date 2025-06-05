@@ -61,8 +61,7 @@ const ServiceCard = ({
       {isInView && (
         <span loading="lazy">
           <div className="service-card__overlay"></div>
-          {/* TODO: FIX */}
-          <div className="service-card__content">
+          <div className="service-card__container">
             <h5 className="service-card__title">{title}</h5>
             <p className="service-card__description body1">{description}</p>
           </div>

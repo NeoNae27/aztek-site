@@ -1,11 +1,15 @@
 import "./About.scss";
 import { ExtraButton, List } from "@components";
 import { useTranslation } from "react-i18next";
-import extra1 from "../../assets/buttons/extra1.webp";
-import extra2 from "../../assets/buttons/extra2.webp";
+import extra1 from "@assets/buttons/extra1.webp";
+import extra2 from "@assets/buttons/extra2.webp";
 
 const About = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(["about"]);
+  const paragraphs = t("paragraphs", { returnObjects: true });
+  const listElements1 = t("listElements1", { returnObjects: true });
+  const listElements2 = t("listElements2", { returnObjects: true });
+  console.log(listElements1);
 
   return (
     <section className="about">
@@ -14,30 +18,22 @@ const About = () => {
           <article className="about__article">
             <h2 className="about__article--title">{t("about.title")}</h2>
             <p className="about__article--text body1">
-              {t("about.text1")}
+              {paragraphs[0]}
               <br /> <br />
-              {t("about.text2")}
+              {paragraphs[1]}
             </p>
           </article>
           <span className="about__doubleList">
             <List
-              listElements={[
-                "High quality of work",
-                "100% Guarantee",
-                "Professional staff",
-              ]}
+              listElements={listElements1}
             />
             <List
-              listElements={[
-                "Individual approach",
-                "High Level of Security",
-                "Modern equipment",
-              ]}
+              listElements={listElements2}
             />
           </span>
         </span>
         <span className="about__buttonsArea">
-          <ExtraButton
+          {/* <ExtraButton
             title={t("about.extraButton1.title")}
             subtitle={t("about.extraButton1.subtitle")}
             backgroundImg={extra1}
@@ -46,7 +42,7 @@ const About = () => {
             title={t("about.extraButton2.title")}
             subtitle={t("about.extraButton2.subtitle")}
             backgroundImg={extra2}
-          />
+          /> */}
         </span>
       </div>
     </section>

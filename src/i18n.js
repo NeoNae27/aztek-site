@@ -10,7 +10,12 @@ import projectsEn from "./locales/en/projects.json";
 import projectsAz from "./locales/az/projects.json";
 import companyEn from './locales/en/company.json';
 import companyAz from './locales/az/company.json';
-
+import navigationEn from './locales/en/navigation.json';
+import navigationAz from './locales/az/navigation.json';
+import mainPageEn from './locales/en/mainPage.json';
+import mainPageAz from './locales/az/mainPage.json';
+import aboutEn from './locales/en/about.json';
+import aboutAz from './locales/az/about.json';
 
 i18n
   .use(LanguageDetector)
@@ -18,13 +23,19 @@ i18n
   .init({
     resources: {
       en: {
+        mainPage: mainPageEn,
+        about: aboutEn,
         translation: translationEn,
+        navigation: navigationEn,
         services: servicesEn,
         projects: projectsEn,
         company: companyEn,
       },
       az: {
+        mainPage: mainPageAz,
+        about: aboutAz,
         translation: translationAz,
+        navigation: navigationAz,
         services: servicesAz,
         projects: projectsAz,
         company: companyAz,

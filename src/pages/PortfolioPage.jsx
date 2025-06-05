@@ -1,12 +1,8 @@
 import { lazy, Suspense } from "react";
 import { Hero } from "@templates";
 import { useTranslation } from "react-i18next";
-// import { DocsCard } from "@components";
-import { Footer, Services, DocsGallery } from "@layouts";
+import { Footer, DocsGallery } from "@layouts";
 import heroImage from "@assets/portfolio-hero-img.webp";
-
-// TODO: FIX
-// import docs from "../../public/aztek-docs.json";
 
 const Gallery = lazy(() => import(`../layouts/Gallery/Gallery.jsx`));
 

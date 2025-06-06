@@ -5,7 +5,7 @@ import projects from "../../assets/content/projects.json";
 
 const Projects = () => {
   const projectsSlice = projects.slice(0, 3);
-  const { t } = useTranslation(["translation", "services", "projects"]);
+  const { t } = useTranslation(["projectsLayout"]);
 
   return (
     <section id="projects" className="projects">
@@ -16,7 +16,7 @@ const Projects = () => {
             subtitle={t("projects.subtitle")}
           />
           <div className="projects__desktop-button">
-            <Button label={t("seeMore")} size="button-md" type="color" href="/portfolio" />
+            <Button label={t("button")} size="button-md" type="color" href="/portfolio" />
           </div>
           <div className="services__mobile-button">
             <Button size="button-arrow" type="color" href="/portfolio" />

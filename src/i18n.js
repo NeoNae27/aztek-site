@@ -4,41 +4,69 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 import translationEn from "./locales/en/translation.json";
 import translationAz from "./locales/az/translation.json";
-import servicesEn from "./locales/en/services.json";
-import servicesAz from "./locales/az/services.json";
-import projectsEn from "./locales/en/projects.json";
-import projectsAz from "./locales/az/projects.json";
-import companyEn from './locales/en/company.json';
-import companyAz from './locales/az/company.json';
-import navigationEn from './locales/en/navigation.json';
-import navigationAz from './locales/az/navigation.json';
-import mainPageEn from './locales/en/mainPage.json';
-import mainPageAz from './locales/az/mainPage.json';
-import aboutEn from './locales/en/about.json';
-import aboutAz from './locales/az/about.json';
+
+import servicesEn from "./locales/en/content/services.json";
+import servicesAz from "./locales/az/content/services.json";
+import projectsEn from "./locales/en/content/projects.json";
+import projectsAz from "./locales/az/content/projects.json";
+
+import navigationEn from './locales/en/components/navigation.json';
+import navigationAz from './locales/az/components/navigation.json';
+
+import mainPageEn from './locales/en/pages/mainPage.json';
+import mainPageAz from './locales/az/pages/mainPage.json';
+import companyPageEn from './locales/en/pages/companyPage.json';
+import companyPageAz from './locales/az/pages/companyPage.json';
+
+import aboutLayoutEn from './locales/en/layouts/aboutLayout.json';
+import aboutLayoutAz from './locales/az/layouts/aboutLayout.json';
+import servicesLayoutEn from './locales/en/layouts/servicesLayout.json';
+import servicesLayoutAz from './locales/az/layouts/servicesLayout.json';
+import projectsLayoutEn from './locales/en/layouts/projectsLayout.json';
+import projectsLayoutAz from './locales/az/layouts/projectsLayout.json';
+import contactsLayoutEn from './locales/en/layouts/contactsLayout.json';
+import contactsLayoutAz from './locales/az/layouts/contactsLayout.json';
+
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    react: {
+      useSuspense: false // This ensures components re-render on language change
+    },
     resources: {
       en: {
-        mainPage: mainPageEn,
-        about: aboutEn,
-        translation: translationEn,
         navigation: navigationEn,
+        
+        mainPage: mainPageEn,
+        
+        aboutLayout: aboutLayoutEn,
+        servicesLayout: servicesLayoutEn,
+        projectsLayout: projectsLayoutEn,
+        contactsLayout: contactsLayoutEn,
+
+        
+        translation: translationEn,
         services: servicesEn,
         projects: projectsEn,
-        company: companyEn,
+        company: companyPageEn,
       },
       az: {
-        mainPage: mainPageAz,
-        about: aboutAz,
-        translation: translationAz,
         navigation: navigationAz,
+        mainPage: mainPageAz,
+        company: companyPageAz,
+        
+        aboutLayout: aboutLayoutAz,
+        servicesLayout: servicesLayoutAz,
+        projectsLayout: projectsLayoutAz,
+        contactsLayout: contactsLayoutAz,
+        
+
+        translation: translationAz,
+        
         services: servicesAz,
         projects: projectsAz,
-        company: companyAz,
       },
     },
     fallbackLng: "en", // Default language if the user language is not available

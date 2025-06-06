@@ -1,12 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { Hero } from "@templates";
-import { Footer, TextContainer} from "@layouts";
+import { Footer, TextContainer } from "@layouts";
 import heroImage from "@assets/about-hero-img.jpg";
 
-const AboutPage = () => {
+const CompanyPage = () => {
   const { t } = useTranslation(["company"]);
   const paragraphs = t("aboutText", { returnObjects: true });
-  console.log(paragraphs);
 
   return (
     <>
@@ -16,10 +15,9 @@ const AboutPage = () => {
         subtitle={t("aboutBanner.subtitle")}
       />
       <TextContainer paragraphs={paragraphs} />
-
       <Footer />
     </>
   );
 };
 
-export default AboutPage;
+export default CompanyPage;

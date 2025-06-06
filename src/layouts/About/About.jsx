@@ -5,11 +5,10 @@ import extra1 from "@assets/buttons/extra1.webp";
 import extra2 from "@assets/buttons/extra2.webp";
 
 const About = () => {
-  const { t } = useTranslation(["about"]);
+  const { t } = useTranslation(["aboutLayout"]);
   const paragraphs = t("paragraphs", { returnObjects: true });
   const listElements1 = t("listElements1", { returnObjects: true });
   const listElements2 = t("listElements2", { returnObjects: true });
-  console.log(listElements1);
 
   return (
     <section className="about">

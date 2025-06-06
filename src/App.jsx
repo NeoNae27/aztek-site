@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router";
 import MainPage from "./pages/MainPage.jsx";
 import PortfolioPage from "./pages/PortfolioPage.jsx";
-import AboutPage from "./pages/AboutPage.jsx";
+import CompanyPage from "./pages/CompanyPage.jsx";
 
 
 function ScrollToHash() {
@@ -30,7 +30,7 @@ function App() {
       <Routes>
         <Route index element={<MainPage />} />
         <Route path="portfolio" element={<PortfolioPage />} />
-        <Route path="about" element={<AboutPage />} /> 
+        <Route path="company" element={<CompanyPage />} /> 
         <Route path="services" element={<PortfolioPage />} />
       </Routes>
     </BrowserRouter>

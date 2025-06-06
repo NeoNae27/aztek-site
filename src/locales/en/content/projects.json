@@ -1,0 +1,35 @@
+{
+  "allProjects": "All Projects",
+  "list": [
+    {
+      "title": "BP operated BosShelf yard",
+      "projectType": "construction",
+      "projectImg": "./projectsImg/project1.webp",
+      "description": "At the heart of the Caspian region, the BP-operated BosShelf yard stands as a flagship model of offshore infrastructure development and strategic collaboration. From complex topsides integration to precision-driven module fabrication, the yard reflects BP’s commitment to operational excellence, safety, and innovation — powering energy ambitions with industrial strength and regional impact. The BP-operated BosShelf yard is more than an industrial site — it’s a strategic launchpad for offshore innovation in the Caspian region. With world-class fabrication facilities, a highly skilled workforce, and seamless integration with BP’s global operational standards, BosShelf delivers mission-critical infrastructure that fuels national energy goals and global supply resilience. Built for high-volume offshore construction, the BosShelf yard—under BP’s operational leadership—delivers precision-engineered modules, jackets, and decks for complex offshore fields. From structural steelwork to integrated topside systems, every ton of output reflects world-class QA/QC, safety culture, and schedule discipline. "
+    },
+    {
+      "title": "Lukoil Petrol Station",
+      "projectType": "maintenance",
+      "projectImg": "./projectsImg/project2.webp",
+      "description": "Annual maintenance and service contract with  Lukoil covering Petrol Stations, Petrol Terminal and other facilities"
+    },
+    {
+      "title": "Pasha Holding | PMD | FMG ",
+      "projectType": "maintenance",
+      "projectImg": "/projectsImg/project3.webp",
+      "description": "Wide range of  construction,  maintenance and  repair works for Pasha  Holding, PMD, FMG including construction  of warehouse, road  construction and and  renovation  works  including HVAC and MEP"
+    },
+    {
+      "title": "Project1",
+      "projectType": "construction",
+      "projectImg": "/public/projectsImg/blank.png",
+      "description": ""
+    },
+    {
+      "title": "Project2",
+      "projectType": "repair works",
+      "projectImg": "/public/projectsImg/blank.png",
+      "description": ""
+    }
+  ]
+}

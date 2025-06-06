@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
  * @returns {JSX.Element} Contacts component
  */
 const Contacts = () => {
-  const { t } = useTranslation(["translation", "services"]);
+  const { t } = useTranslation("contactsLayout");
 
   return (
     <section id="contacts" className="contacts">
@@ -24,7 +24,7 @@ const Contacts = () => {
             <article className="contacts__info">
               <h5 className="contacts__title">{t("contacts.address.title")}</h5>
               <p className="body1">
-                {t("contacts.address.text")}
+                124C Khojasan Highway Baku, Azerbaijan. AZ1063
               </p>
             </article>
 

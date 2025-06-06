@@ -3,7 +3,7 @@ import { lazy, Suspense } from "react";
 import { Hero } from "@templates";
 import { About, Projects, Contacts, Footer } from "@layouts";
 import { useTranslation } from "react-i18next";
-import heroImage from "@assets/hero-pic.webp";
+import heroImage from "@assets/main-pic.jpg";
 
 const Services = lazy(() => import(`../layouts/Services/Service.jsx`));
 

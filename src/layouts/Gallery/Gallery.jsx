@@ -1,7 +1,8 @@
 import "./Gallery.scss";
-import projects from "../../assets/content/projects.json";
+// import projects from "../../assets/content/projects.json";
 import { ProjectCard } from "@components";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 // Skeleton component for loading state
 const ProjectCardSkeleton = () => (
@@ -24,29 +25,36 @@ const ProjectCardSkeleton = () => (
 );
 
 const Gallery = () => {
+  const { t, i18n } = useTranslation(["projects"]);
+  const projects = t("projects:list", { returnObjects: true });
+
   const [selectedType, setSelectedType] = useState("all");
   const [isLoading, setIsLoading] = useState(false);
 
+  useEffect(() => {
+    setSelectedType("all");
+  }, [i18n.language]);
+
   // Get unique project types
-  const projectTypes = useMemo(() => {
-    const types = [...new Set(projects.map((project) => project.projectType))];
-    return ["all", ...types];
-  }, []);
+  const projectTypes = [
+    "all",
+    ...new Set(projects.map((project) => project.projectType)),
+  ];
 
   const filteredProjects = useMemo(() => {
     if (selectedType === "all") {
       return projects;
     }
     return projects.filter((project) => project.projectType === selectedType);
-  }, [selectedType]);
+  }, [selectedType, projects, i18n.language]);
 
   const handleTypeChange = async (e, type) => {
     e.preventDefault();
     if (selectedType === type) return;
-    
+
     setIsLoading(true);
     setSelectedType(type);
-    
+
     // Simulate loading delay for better UX
     setTimeout(() => {
       setIsLoading(false);
@@ -74,30 +82,26 @@ const Gallery = () => {
                 }`}
                 onClick={(e) => handleTypeChange(e, type)}
               >
-                {type === "all" ? "All Projects" : type}
+                {type === "all" ? t("allProjects") : type}
               </a>
             ))}
           </div>
         </nav>
-        
+
         <div className="gallery__cards-grid">
-          {isLoading ? (
-            skeletonCards
-          ) : (
-            filteredProjects.map(
-              ({ title, projectType, projectImg, description }) => (
-                <ProjectCard
-                  key={title}
-                  title={title}
-                  projectType={projectType}
-                  projectImg={projectImg}
-                  description={
-                    description || "Learn more about our services"
-                  }
-                />
-              )
-            )
-          )}
+          {isLoading
+            ? skeletonCards
+            : filteredProjects.map(
+                ({ title, projectType, projectImg, description }) => (
+                  <ProjectCard
+                    key={title}
+                    title={title}
+                    projectType={projectType}
+                    projectImg={projectImg}
+                    description={description || "Learn more about our services"}
+                  />
+                )
+              )}
         </div>
       </div>
     </section>

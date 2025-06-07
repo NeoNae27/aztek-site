@@ -7,7 +7,7 @@ import "./Services.scss";
  * @returns {JSX.Element} Services component
  */
 const Services = () => {
-  const { t } = useTranslation(['translation', 'services']);
+  const { t } = useTranslation(['servicesLayout']);
   const services = t('services:list', { returnObjects: true });
 
   return (
@@ -19,7 +19,7 @@ const Services = () => {
             subtitle={t('service.subtitle')}
           />
           <div className="services__desktop-button">
-            <Button label={t('seeMore')} size="button-md" type="color" />
+            <Button label={t('button')} size="button-md" type="color" />
           </div>
           <div className="services__mobile-button">
             <Button size="button-arrow" type="color" />
@@ -33,7 +33,7 @@ const Services = () => {
               title={title}
               backgroundImg={backgroundImg}
               description={
-                description || "Learn more about our premium services"
+                description || "Description not available"
               }
             />
           ))}

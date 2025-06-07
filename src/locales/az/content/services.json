@@ -1,0 +1,34 @@
+{
+  "list": [
+    {
+      "title": "Avadanlıq icarəsi",
+      "backgroundImg": "./servicesImg/1.webp",
+      "description": "Avadanlıqların icarəsi xidmətimiz etibarlı alət və mexanizmlərə ehtiyacı olan müəssisələr və şəxslər üçün sərfəli həll yolu təqdim edir. İstər tikinti avadanlığı, istər audiovizual avadanlıq və ya xüsusi alətlər olsun, biz sizin ehtiyaclarınızı ödəmək üçün geniş seçim təklif edirik."
+    },
+    {
+      "title": "Tikinti və təmir işləri",
+      "backgroundImg": "./servicesImg/2.webp",
+      "description": "İstər sıfırdan tikirsinizsə, istərsə də mövcud strukturları bərpa edirsinizsə, bizim tikinti və təmir işləri xidmətimiz keyfiyyət və səmərəliliyi təmin edir. Ehtiyaclarınıza uyğun olaraq davamlı nəticələr əldə etmək üçün təcrübəli mütəxəssislər, yüksək dərəcəli materiallar və qabaqcıl texnikalar təqdim edirik. Böyük tikinti layihələrindən kiçik təmirə qədər komandamız istənilən miqyaslı tapşırıqları dəqiqlik və təcrübə ilə həll etmək üçün təchiz edilmişdir. Güclü təməllər və qüsursuz təmir ilə vizyonunuzu həyata keçirmək üçün bizə etibar edin."
+    },
+    {
+      "title": "İşçi qüvvəsi təminatı",
+      "backgroundImg": "./servicesImg/3.webp",
+      "description": "Bizim işçi qüvvəsi təchizatı xidmətimiz müəssisələrin onların xüsusi ehtiyaclarına uyğunlaşdırılmış etibarlı, bacarıqlı və təcrübəli işçi qüvvəsinə çıxışını təmin edir. İstər qısa müddətli işçi heyətinə, istərsə də uzunmüddətli məşğulluq həllərinə ehtiyacınız olsun, biz tikinti, istehsal, logistika və s. daxil olmaqla, müxtəlif sənaye sahələrində peşəkarları təmin edirik. Çevik işə götürmə variantları, hərtərəfli yoxlama prosesləri və məhsuldarlığı yoxlamaq üçün sizə köməklik göstərmək, məhsuldarlığı yoxlamaq üçün güclü komanda yaratmaq. və məqsədlərinizə çatın."
+    },
+    {
+      "title": "Mühəndislik",
+      "backgroundImg": "./servicesImg/4.webp",
+      "description": "Mühəndislik xidmətlərimiz müxtəlif sənayelərin tələblərinə cavab verən ekspert həllər təqdim edir. Struktur, mexaniki, elektrik və ya inşaat mühəndisliyi təcrübəsinə ehtiyacınız olub-olmamasından asılı olmayaraq, təcrübəli mütəxəssislərimiz hər bir layihədə dəqiqlik, səmərəlilik və yenilik təqdim edirlər. Dizayn və təhlildən tətbiq və texniki xidmətə qədər biz funksionallığı və davamlılığı artıran yüksək keyfiyyətli nəticələr təmin edirik. Qabaqcıl texnologiya və mükəmməlliyə sadiqliyimizlə biz ideyaları həyata keçirməyə və zamanın sınağına tab gətirən mühəndis həllər vasitəsilə uğur qazanmağa kömək edirik."
+    },
+    {
+      "title": "Texniki xidmət və servis",
+      "backgroundImg": "./servicesImg/5.webp",
+      "description": "Biz fasilələri minimuma endirmək və performansı optimallaşdırmaq üçün profilaktik baxım, müntəzəm yoxlamalar və sürətli təmir təklif edirik. İstər sənaye texnikası, istər tikinti infrastrukturu, istərsə də xüsusi avadanlıq olsun, bizim ekspert komandamız hər şeyin ən yüksək səmərəlilikdə işləməsini təmin etmək üçün etibarlı dəstək verir. Keyfiyyətli və vaxtında xidmət göstərmək öhdəliyi ilə biz sizə məhsuldarlığı qorumağa və baha başa gələn fasilələrdən qaçmağa kömək edirik."
+    },
+    {
+      "title": "Material təminatı",
+      "backgroundImg": "./servicesImg/6.webp",
+      "description": "Biz istənilən miqyaslı layihələri dəstəkləmək üçün yüksək keyfiyyətli tikinti, sənaye və ixtisaslaşdırılmış materiallar təqdim edirik. Xammala, tikinti materiallarına və ya avadanlıq komponentlərinə ehtiyacınız olmasından asılı olmayaraq, biz vaxtında çatdırılma, rəqabətqabiliyyətli qiymətlər və etibarlı mənbəyə zəmanət veririk. Keyfiyyətə və etibarlılığa olan öhdəliyimiz, əməliyyatlarınızın rəvan və səmərəli şəkildə davam etməsi üçün sizə lazımi materialları dəqiq ehtiyac duyduğunuz anda əldə etməyinizi təmin edir."
+    }
+  ]
+}

@@ -17,7 +17,7 @@ const DocsCard = ({ docImg, docURL, docTitle }) => {
           role="button"
           aria-label={docTitle ? `Open ${docTitle} PDF` : "Open PDF document"}
           alt={docTitle ? `Preview of ${docTitle}` : "Document preview"}
-          loading="lazy" // Added lazy loading
+          loading="lazy"
 
         />
       </div>

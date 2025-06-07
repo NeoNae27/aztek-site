@@ -9,7 +9,6 @@
   cursor: pointer;
   transition: transform 0.3s ease;
 
-  // Overlay for background transition
   &__overlay {
     position: absolute;
     top: 0;
@@ -43,8 +42,8 @@
   // Description styling
   &__description {
     display: none;
+    text-align: justify;
     color: var(--color-primary-200);
-;
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
@@ -55,7 +54,7 @@
       background-color: var(--color-primary-700);
     }
 
-    .service-card__content {
+    .service-card__container {
       justify-content: flex-start;
     }
 
@@ -68,6 +67,10 @@
       display: block;
       opacity: 1;
       justify-content: flex-start;
+      width: 300px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
     }
   }
 }

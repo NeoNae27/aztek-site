@@ -11,7 +11,7 @@ const Header = () => {
 
   const navItems = [
     { name: t("nav.home"), url: "/" },
-    { name: t("nav.company"), url: "/about" },
+    { name: t("nav.company"), url: "/company" },
     { name: t("nav.services"), url: "/services" },
     { name: t("nav.portfolio"), url: "/portfolio" },
     { name: t("nav.contact"), url: "/#contacts" },

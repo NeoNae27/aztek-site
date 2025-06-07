@@ -1,6 +1,6 @@
 ### TO-DO List
 
-- [ ] Setup Components in one variant
+- [x] Setup Components in one variant
     - [x] Create "Docs" component
 - [ ] Transfer all projects
     - [ ] Add description to all projects

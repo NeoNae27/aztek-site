@@ -11,25 +11,55 @@
       "title": "Lukoil Petrol Station",
       "projectType": "maintenance",
       "projectImg": "./projectsImg/project2.webp",
-      "description": "Annual maintenance and service contract with  Lukoil covering Petrol Stations, Petrol Terminal and other facilities"
+      "description": "Annual maintenance and service contract with  Lukoil covering Petrol Stations, Petrol Terminal and other facilities. Our comprehensive annual maintenance and service contract with Lukoil ensures the smooth operation of petrol stations, petrol terminals, and other critical facilities. We provide regular inspections, preventive maintenance, and prompt repairs to uphold safety standards and operational efficiency. With a dedicated team of professionals and a commitment to quality, we guarantee reliable service, minimizing downtime and optimizing performance across all covered locations."
     },
     {
       "title": "Pasha Holding | PMD | FMG ",
       "projectType": "maintenance",
       "projectImg": "/projectsImg/project3.webp",
-      "description": "Wide range of  construction,  maintenance and  repair works for Pasha  Holding, PMD, FMG including construction  of warehouse, road  construction and and  renovation  works  including HVAC and MEP"
+      "description": "We provide a wide range of construction, maintenance, and repair works for Pasha Holding, PMD, FMG, ensuring top-tier quality and efficiency. Our services cover warehouse construction, road development, and renovation projects, including specialized work in HVAC and MEP systems. With a commitment to excellence, we deliver reliable solutions tailored to the unique requirements of each project, ensuring durability, safety, and seamless execution from start to finish"
     },
     {
-      "title": "Project1",
+      "title": "Technip Energies Constuction",
       "projectType": "construction",
       "projectImg": "/public/projectsImg/blank.png",
-      "description": ""
+      "description": "Our contract with Technip Energies encompasses a wide range of repair, renovation, and construction works at their Baku head office. From structural upgrades to interior refurbishments, our expertise ensures high-quality execution while maintaining efficiency and safety. With a focus on durability and modern solutions, we deliver tailored services that align with Technip Energies' operational and aesthetic needs, creating a functional and improved workspace."
     },
     {
-      "title": "Project2",
-      "projectType": "repair works",
+      "title": "Annual Construction and maintenance contract with ABB ",
+      "projectType": "construction",
       "projectImg": "/public/projectsImg/blank.png",
-      "description": ""
+      "description": "We provide comprehensive construction and maintenance services under our annual contract with ABB (International Bank of Azerbaijan), covering all facilities and branches across Baku and Azerbaijan. Our expertise ensures the seamless upkeep, renovation, and structural integrity of bank premises, maintaining high standards of safety, efficiency, and aesthetics. From routine maintenance to large-scale upgrades, we are committed to delivering reliable solutions that support ABB’s operational excellence."
+    },
+    {
+      "title": "HVAC ITV (Ictimai/Public TV) ",
+      "projectType": "maintenance",
+      "projectImg": "/public/projectsImg/blank.png",
+      "description": "We provide comprehensive HVAC maintenance and service solutions under our annual and ad-hoc contract with ITV (Ictimai/Public TV). Covering all essential heating, ventilation, and air conditioning systems, our expert team ensures efficient climate control, routine inspections, emergency repairs, and system optimizations. With a focus on reliability and performance, we help maintain a comfortable and operational environment, supporting ITV’s broadcasting and workplace needs year-round."
+    },
+    {
+      "title": "Ongoing contract with Schlumberger",
+      "projectType": "construction",
+      "projectImg": "/public/projectsImg/blank.png",
+      "description": "Our ongoing contract with Schlumberger covers a wide range of construction, maintenance, and repair works, ensuring operational efficiency and infrastructure reliability. We provide expert solutions for HVAC and MEP systems, as well as general structural upgrades, facility maintenance, and specialized repairs. With a commitment to quality and precision, our services support Schlumberger’s facilities by delivering safe, durable, and efficient solutions tailored to their requirements."
+    },
+    {
+      "title": "Gas Export branch of SOCAR ",
+      "projectType": "maintenance",
+      "projectImg": "/public/projectsImg/blank.png",
+      "description": "Our extensive contract with the Gas Export branch of SOCAR covers over 400,000 square meters of blasting and painting works for main gas pipelines. With a focus on durability, safety, and corrosion protection, our specialized services ensure the longevity and reliability of critical infrastructure. Using advanced techniques and high-quality materials, we deliver precision coatings that meet industry standards, supporting the continuous and efficient operation of SOCAR’s gas export facilities."
+    },
+    {
+      "title": "Oil and Gas Construction Trust of SOCAR",
+      "projectType": "maintenance",
+      "projectImg": "/public/projectsImg/blank.png",
+      "description": "We successfully executed a large-scale cleaning, backfilling, and compacting project for Oil and Gas Construction Trust of SOCAR, transforming waste lands in Absheron. Through meticulous planning and advanced techniques, we ensured efficient land restoration, enhancing environmental sustainability and site usability. Our expertise in handling large volumes of material and precision earthworks contributed to the seamless completion of this critical project, reinforcing SOCAR’s infrastructure and operational goals."
+    },
+    {
+      "title": "Fencing works for SOCAR Downstream Management",
+      "projectType": "maintenance",
+      "projectImg": "/public/projectsImg/blank.png",
+      "description": "During shutdown operations, we successfully executed a complex scope of painting and blasting works, ensuring the protection and durability of critical infrastructure for SOCAR Downstream Management. Additionally, our fencing works enhanced security and site integrity, meeting stringent industry standards. With precision techniques and high-quality materials, our team delivered reliable solutions that support operational efficiency and long-term facility maintenance"
     }
   ]
 }

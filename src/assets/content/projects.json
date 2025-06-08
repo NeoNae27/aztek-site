@@ -1,32 +1,20 @@
 [
   {
-    "title": "BP operated BosShelf yard",
-    "projectType": "construction",
-    "projectImg": "./projectsImg/project1.webp",
-    "description": "At the heart of the Caspian region, the BP-operated BosShelf yard stands as a flagship model of offshore infrastructure development and strategic collaboration. From complex topsides integration to precision-driven module fabrication, the yard reflects BP’s commitment to operational excellence, safety, and innovation — powering energy ambitions with industrial strength and regional impact. The BP-operated BosShelf yard is more than an industrial site — it’s a strategic launchpad for offshore innovation in the Caspian region. With world-class fabrication facilities, a highly skilled workforce, and seamless integration with BP’s global operational standards, BosShelf delivers mission-critical infrastructure that fuels national energy goals and global supply resilience. Built for high-volume offshore construction, the BosShelf yard—under BP’s operational leadership—delivers precision-engineered modules, jackets, and decks for complex offshore fields. From structural steelwork to integrated topside systems, every ton of output reflects world-class QA/QC, safety culture, and schedule discipline. "
-  },
-  {
-    "title": "Lukoil Petrol Station",
-    "projectType": "maintenance",
-    "projectImg": "./projectsImg/project2.webp",
-    "description": "Annual maintenance and service contract with  Lukoil covering Petrol Stations, Petrol Terminal and other facilities"
-  },
-  {
-    "title": "Pasha Holding | PMD | FMG ",
-    "projectType": "maintenance",
-    "projectImg": "/projectsImg/project3.webp",
-    "description": "Wide range of  construction,  maintenance and  repair works for Pasha  Holding, PMD, FMG including construction  of warehouse, road  construction and and  renovation  works  including HVAC and MEP"
-  },
-  {
-    "title": "Project1",
-    "projectType": "construction",
-    "projectImg": "/public/projectsImg/blank.png",
-    "description": ""
-  },
-  {
-    "title": "Project2",
-    "projectType": "repair works",
-    "projectImg": "/public/projectsImg/blank.png",
-    "description": ""
-  }
+      "title": "BP operated BosShelf yard",
+      "projectType": "construction",
+      "projectImg": "./projectsImg/BPBosShelfyard.png",
+      "description": "At the heart of the Caspian region, the BP-operated BosShelf yard stands as a flagship model of offshore infrastructure development and strategic collaboration. From complex topsides integration to precision-driven module fabrication, the yard reflects BP’s commitment to operational excellence, safety, and innovation — powering energy ambitions with industrial strength and regional impact. The BP-operated BosShelf yard is more than an industrial site — it’s a strategic launchpad for offshore innovation in the Caspian region. With world-class fabrication facilities, a highly skilled workforce, and seamless integration with BP’s global operational standards, BosShelf delivers mission-critical infrastructure that fuels national energy goals and global supply resilience. Built for high-volume offshore construction, the BosShelf yard—under BP’s operational leadership—delivers precision-engineered modules, jackets, and decks for complex offshore fields. From structural steelwork to integrated topside systems, every ton of output reflects world-class QA/QC, safety culture, and schedule discipline."
+    },
+    {
+      "title": "Lukoil Petrol Station",
+      "projectType": "maintenance",
+      "projectImg": "./projectsImg/LukoilPetrolStation.jpg",
+      "description": "Annual maintenance and service contract with  Lukoil covering Petrol Stations, Petrol Terminal and other facilities. Our comprehensive annual maintenance and service contract with Lukoil ensures the smooth operation of petrol stations, petrol terminals, and other critical facilities. We provide regular inspections, preventive maintenance, and prompt repairs to uphold safety standards and operational efficiency. With a dedicated team of professionals and a commitment to quality, we guarantee reliable service, minimizing downtime and optimizing performance across all covered locations."
+    },
+    {
+      "title": "Pasha Holding | PMD | FMG",
+      "projectType": "maintenance",
+      "projectImg": "/projectsImg/PashaHolding.png",
+      "description": "We provide a wide range of construction, maintenance, and repair works for Pasha Holding, PMD, FMG, ensuring top-tier quality and efficiency. Our services cover warehouse construction, road development, and renovation projects, including specialized work in HVAC and MEP systems. With a commitment to excellence, we deliver reliable solutions tailored to the unique requirements of each project, ensuring durability, safety, and seamless execution from start to finish"
+    }
 ]

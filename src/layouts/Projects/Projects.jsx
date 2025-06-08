@@ -1,11 +1,12 @@
 import { SectionArticle, Button, ProjectCard } from "@components";
 import "./Projects.scss";
 import { useTranslation } from "react-i18next";
-import projects from "../../assets/content/projects.json";
+// import projects from "../../assets/content/projects.json";
 
 const Projects = () => {
+  const { t } = useTranslation(["projectsLayout", "projects"]);
+  const projects = t("projects:list", { returnObjects: true });
   const projectsSlice = projects.slice(0, 3);
-  const { t } = useTranslation(["projectsLayout"]);
 
   return (
     <section id="projects" className="projects">

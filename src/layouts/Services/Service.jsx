@@ -7,7 +7,7 @@ import "./Services.scss";
  * @returns {JSX.Element} Services component
  */
 const Services = () => {
-  const { t } = useTranslation(['servicesLayout']);
+  const { t } = useTranslation(['servicesLayout , services']);
   const services = t('services:list', { returnObjects: true });
 
   return (

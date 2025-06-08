@@ -8,3 +8,4 @@
 - [ ] Create a services page
     - [x] Add description to all services 
 - [ ] Complete a translation
+ ventilation, painting, reconstruction

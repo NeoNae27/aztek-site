@@ -7,14 +7,14 @@ import heroImage from "@assets/portfolio-hero-img.webp";
 const Gallery = lazy(() => import(`../layouts/Gallery/Gallery.jsx`));
 
 const PortfolioPage = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(["projectsLayout"]);
 
   return (
     <>
       <Hero
         backgroundImage={heroImage}
         title={"Portfolio"}
-        subtitle={"See our works"}
+        subtitle={t("projects.subtitle")}
       />
       <Suspense
         fallback={<div className="caption1 lazyload">Loading Gallery...</div>}

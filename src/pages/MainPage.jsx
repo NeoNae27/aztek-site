@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-
+import {Helmet} from "react-helmet";
 import { Hero } from "@templates";
 import { About, Projects, Contacts, Footer } from "@layouts";
 import { useTranslation } from "react-i18next";

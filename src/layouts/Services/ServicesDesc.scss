@@ -1,0 +1,22 @@
+@use "../../styles.scss";
+
+.services-desc {
+  &__container {
+    @include styles.container;
+    & {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+
+  h5 {
+    color: var(--color-primary-700);
+  }
+}

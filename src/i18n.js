@@ -2,9 +2,6 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-import translationEn from "./locales/en/translation.json";
-import translationAz from "./locales/az/translation.json";
-
 import servicesEn from "./locales/en/content/services.json";
 import servicesAz from "./locales/az/content/services.json";
 import projectsEn from "./locales/en/content/projects.json";
@@ -46,8 +43,6 @@ i18n
         projectsLayout: projectsLayoutEn,
         contactsLayout: contactsLayoutEn,
 
-        
-        translation: translationEn,
         services: servicesEn,
         projects: projectsEn,
         company: companyPageEn,
@@ -61,9 +56,6 @@ i18n
         servicesLayout: servicesLayoutAz,
         projectsLayout: projectsLayoutAz,
         contactsLayout: contactsLayoutAz,
-        
-
-        translation: translationAz,
         
         services: servicesAz,
         projects: projectsAz,

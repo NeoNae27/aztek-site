@@ -25,7 +25,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <AiFillLinkedin size={24} />
+              <AiFillLinkedin size={24} href="https://www.linkedin.com/company/aztek-mmc" target="blank" />
             </a>
           </div>
         </span>

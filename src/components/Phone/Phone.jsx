@@ -5,8 +5,8 @@ const Phone = () => {
   return (
     <span className="phone">
       <img alt="Phone" width="24" height="24" src={phone} />
-      <a href="tel:+994124090050" className="subtitle2">
-         +994 (12) 409 00 50
+      <a href="tel:+994(55)2142442" className="subtitle2">
+          +994 (55) 214 24 42
       </a>
     </span>
   );

@@ -2,9 +2,9 @@
 
 - [x] Setup Components in one variant
     - [x] Create "Docs" component
-- [ ] Transfer all projects
-    - [ ] Add description to all projects
-    - [ ] Fix project spash screen
+- [x] Transfer all projects
+    - [x] Add description to all projects
+    - [x] Fix project spash screen
 - [ ] Create a services page
     - [x] Add description to all services 
 - [ ] Complete a translation

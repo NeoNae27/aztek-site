@@ -2,34 +2,64 @@
   "allProjects": "Bütün Layihələr",
   "list": [
     {
-      "title": "BP operated BosShelf yard",
+      "title": "BP tərəfindən idarə olunan BosShelf sahəsi",
       "projectType": "tikinti",
-      "projectImg": "./projectsImg/project1.webp",
-      "description": "At the heart of the Caspian region, the BP-operated BosShelf yard stands as a flagship model of offshore infrastructure development and strategic collaboration. From complex topsides integration to precision-driven module fabrication, the yard reflects BP’s commitment to operational excellence, safety, and innovation — powering energy ambitions with industrial strength and regional impact. The BP-operated BosShelf yard is more than an industrial site — it’s a strategic launchpad for offshore innovation in the Caspian region. With world-class fabrication facilities, a highly skilled workforce, and seamless integration with BP’s global operational standards, BosShelf delivers mission-critical infrastructure that fuels national energy goals and global supply resilience. Built for high-volume offshore construction, the BosShelf yard—under BP’s operational leadership—delivers precision-engineered modules, jackets, and decks for complex offshore fields. From structural steelwork to integrated topside systems, every ton of output reflects world-class QA/QC, safety culture, and schedule discipline. "
+      "projectImg": "./projectsImg/BPBosShelfyard.png",
+      "description": "Xəzər bölgəsinin mərkəzində yerləşən və BP tərəfindən idarə olunan BosShelf sahəsi, dəniz infrastrukturu inkişafı və strateji əməkdaşlığın nümunəsi kimi çıxış edir. Mürəkkəb üst hissələrin inteqrasiyasından tutmuş dəqiq modul istehsalına qədər bu sahə, BP-nin əməliyyat mükəmməlliyinə, təhlükəsizliyə və yeniliyə sadiqliyini əks etdirir — sənaye gücü və regional təsirlə enerji məqsədlərini dəstəkləyir. BosShelf sadəcə sənaye sahəsi deyil — Xəzər bölgəsində dəniz innovasiyaları üçün strateji bir platformadır. Dünya səviyyəli istehsalat imkanları, yüksək ixtisaslı işçi qüvvəsi və BP-nin qlobal standartlarına uyğun inteqrasiya ilə BosShelf milli enerji hədəflərini və qlobal təchizat dayanıqlığını təmin edən kritik infrastrukturu təqdim edir. Böyük həcmli dəniz tikintisi üçün yaradılmış bu sahə, BP-nin rəhbərliyi altında dəqiqliklə hazırlanmış modullar, dayaqlar və platformalar istehsal edir. Struktur polad işlərindən inteqrasiya olunmuş üst sistemlərə qədər hər kiloqram məhsul keyfiyyətə nəzarət, təhlükəsizlik və vaxt rejiminə riayətlə həyata keçirilir."
     },
     {
-      "title": "Lukoil Petrol Station",
-      "projectType": "texniki qulluq",
-      "projectImg": "./projectsImg/project2.webp",
-      "description": "Annual maintenance and service contract with  Lukoil covering Petrol Stations, Petrol Terminal and other facilities"
+      "title": "Lukoil Yanacaqdoldurma Məntəqəsi",
+      "projectType": "texniki xidmət",
+      "projectImg": "./projectsImg/LukoilPetrolStation.jpg",
+      "description": "Lukoil ilə illik texniki xidmət müqaviləmiz yanacaqdoldurma məntəqələrini, yanacaq terminallarını və digər obyektləri əhatə edir. Müntəzəm yoxlamalar, profilaktik xidmət və operativ təmir işləri ilə təhlükəsizlik və əməliyyat səmərəliliyi təmin olunur. Peşəkar komandamız və keyfiyyətə olan öhdəliyimizlə xidmətlərin dayanıqlığını və fasiləsiz fəaliyyətini təmin edirik."
     },
     {
-      "title": "Pasha Holding | PMD | FMG ",
-      "projectType": "texniki qulluq",
-      "projectImg": "/projectsImg/project3.webp",
-      "description": "Wide range of  construction,  maintenance and  repair works for Pasha  Holding, PMD, FMG including construction  of warehouse, road  construction and and  renovation  works  including HVAC and MEP"
+      "title": "Pasha Holding | PMD | FMG",
+      "projectType": "texniki xidmət",
+      "projectImg": "./projectsImg/PashaHolding.png",
+      "description": "Pasha Holding, PMD, FMG üçün tikinti, texniki xidmət və təmir işləri təqdim edirik. Anbar tikintisi, yol infrastruktur layihələri, HVAC və MEP sistemlərinə dair ixtisaslaşmış xidmətlər daxil olmaqla geniş spektrli xidmətlər göstəririk. Layihələrin spesifik tələblərinə uyğun etibarlı və davamlı həllər təqdim edirik."
     },
     {
-      "title": "Project1",
+      "title": "Technip Energies Tikinti",
       "projectType": "tikinti",
-      "projectImg": "/public/projectsImg/blank.png",
-      "description": ""
+      "projectImg": "./projectsImg/TECHNIPENERGIESLOGO.png",
+      "description": "Technip Energies ilə müqaviləmiz onların Bakı ofisində müxtəlif təmir, yenidənqurma və tikinti işlərini əhatə edir. Struktur yeniləmələrdən interyer təmirinə qədər bütün işlər yüksək keyfiyyət və təhlükəsizliklə həyata keçirilir. Davamlılıq və müasir həllərə əsaslanan yanaşmamız ilə funksional və təkmilləşdirilmiş iş sahəsi yaradılır."
     },
     {
-      "title": "Project2",
-      "projectType": "təmir işləri",
-      "projectImg": "/public/projectsImg/blank.png",
-      "description": ""
+      "title": "ABB ilə illik tikinti və texniki xidmət müqaviləsi",
+      "projectType": "tikinti",
+      "projectImg": "./projectsImg/AnnualConstructionABB.png",
+      "description": "ABB (Azərbaycan Beynəlxalq Bankı) ilə illik müqaviləmiz çərçivəsində bütün obyektlər və filiallar üzrə tikinti və texniki xidmət göstəririk. Təmir və strukturun bütövlüyünü qoruyaraq təhlükəsizlik, səmərəlilik və estetikaya cavab verən həllər təqdim edirik. Rutin baxımdan genişmiqyaslı təmir işlərinə qədər ABB-nin əməliyyat mükəmməlliyini dəstəkləyirik."
+    },
+    {
+      "title": "HVAC ITV (İctimai TV)",
+      "projectType": "texniki xidmət",
+      "projectImg": "./projectsImg/HVACITV.png",
+      "description": "ITV (İctimai TV) ilə illik və əlavə müqavilə əsasında HVAC sistemlərinə dair texniki xidmət göstəririk. İstilik, havalandırma və kondisioner sistemlərinin fasiləsiz fəaliyyəti üçün planlı baxışlar, təmir və sistem optimizasiyaları həyata keçiririk. Etibarlılıq və yüksək performansa əsaslanaraq yayım və iş şəraitinin dəstəklənməsini təmin edirik."
+    },
+    {
+      "title": "Schlumberger ilə davam edən müqavilə",
+      "projectType": "tikinti",
+      "projectImg": "./projectsImg/Schlumberger.png",
+      "description": "Schlumberger ilə davam edən müqaviləmiz çərçivəsində müxtəlif tikinti, texniki xidmət və təmir işləri yerinə yetirilir. HVAC və MEP sistemləri üzrə ixtisaslaşmış xidmətlər və struktur yeniləmələr təqdim olunur. Keyfiyyət və dəqiqliyə sadiqliyimizlə təhlükəsiz, davamlı və səmərəli həllər təklif edirik."
+    },
+    {
+      "title": "SOCAR-ın Qaz İxrac Şöbəsi",
+      "projectType": "texniki xidmət",
+      "projectImg": "./projectsImg/GasExportSOCAR.png",
+      "description": "SOCAR-ın Qaz İxrac şöbəsi ilə müqaviləmiz çərçivəsində 400,000 kvadrat metrdən çox əsas qaz boru xətlərində qum partladılması və boya işləri həyata keçirilmişdir. Davamlılıq, təhlükəsizlik və korroziyadan qorunma məqsədilə yüksək keyfiyyətli materiallar və qabaqcıl texnologiyalarla xidmət göstəririk."
+    },
+    {
+      "title": "SOCAR Neft və Qaz Tikinti Tresti",
+      "projectType": "texniki xidmət",
+      "projectImg": "./projectsImg/OilandGasSocar.png",
+      "description": "SOCAR Neft və Qaz Tikinti Tresti üçün Abşeron bölgəsində tullantı torpaqların təmizlənməsi, torpaq doldurulması və sıxlaşdırılması üzrə genişmiqyaslı layihə həyata keçirmişik. Planlaşdırma və texniki icra baxımından effektiv həllərlə ətraf mühitin bərpasına və sahənin istifadəsinə töhfə vermişik."
+    },
+    {
+      "title": "SOCAR Downstream Management üçün hasarlama işləri",
+      "projectType": "texniki xidmət",
+      "projectImg": "./projectsImg/FencingWorksSocar.png",
+      "description": "SOCAR Downstream Management üçün aparılan dayanma əməliyyatları zamanı mürəkkəb boyama və qum partladılması işləri uğurla yerinə yetirilmişdir. Həmçinin hasarlama işləri ilə təhlükəsizlik və sahənin bütövlüyü təmin edilmişdir. Yüksək keyfiyyətli materiallar və dəqiq texnikalarla etibarlı və uzunmüddətli həllər təqdim olunmuşdur."
     }
   ]
 }

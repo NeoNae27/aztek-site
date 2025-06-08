@@ -1,0 +1,16 @@
+{
+  "contacts": {
+    "title": "Bizimlə Əlaqə",
+    "subtitle": "Layihələrinizdə sizə kömək etmək üçün buradayıq. Bizimlə əlaqə saxlayın!",
+    "address": {
+      "title": "ÜNVAN",
+      "text": "AZ1065, Bakı şəhəri, Azərbaycan, Bakıxanov küçəsi, 6, Bridge Plaza, 4-cü mərtəbə"
+    },
+    "email": {
+      "title": "ƏLAQƏ"
+    },
+    "phone": {
+      "text": "24 saat ərzində sizinlə əlaqə saxlayacağıq və ya hər gün 09:00 - 24:00 zəng edin"
+    }
+  }
+}

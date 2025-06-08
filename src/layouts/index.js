@@ -1,0 +1,9 @@
+export { default as About } from "./About/About.jsx";
+export { default as Services } from "./Services/Service.jsx";
+export { default as Projects } from "./Projects/Projects.jsx";
+export { default as Contacts } from "./Contacts/Contacts.jsx";
+export { default as Gallery } from "./Gallery/Gallery.jsx";
+export { default as Footer } from "./Footer/Footer.jsx";
+export { default as TextContainer } from "./TextContainer/TextContainer.jsx";
+export { default as DocsGallery } from "./Gallery/DocsGallery/DocsGallery.jsx";
+export { default as ServicesDesc } from "./Services/ServicesDesc.jsx";

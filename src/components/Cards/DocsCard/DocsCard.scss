@@ -1,0 +1,12 @@
+.docs-card {
+  min-width: 360px;
+  height: auto;
+
+  border: 2px solid var(--color-gray-500);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

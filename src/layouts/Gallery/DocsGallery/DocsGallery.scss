@@ -1,0 +1,19 @@
+@use "../../../styles.scss";
+
+.docs-gallery {
+  @include styles.container;
+  & {
+    gap: 48px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 48px;
+
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+}

@@ -1,5 +1,5 @@
 import { SectionArticle, Button, ServiceCard } from "@components";
-import services from "../../assets/services.json";
+import { useTranslation } from "react-i18next";
 import "./Services.scss";
 
 /**
@@ -7,16 +7,19 @@ import "./Services.scss";
  * @returns {JSX.Element} Services component
  */
 const Services = () => {
+  const { t } = useTranslation(['servicesLayout , services']);
+  const services = t('services:list', { returnObjects: true });
+
   return (
     <section id="services" className="services">
       <div className="services__container">
         <header className="services__header">
           <SectionArticle
-            title="Our Services"
-            subtitle="We provide a wide range of services. From small to fundamental works"
+            title={t('service.title')}
+            subtitle={t('service.subtitle')}
           />
           <div className="services__desktop-button">
-            <Button label="See More" size="button-md" type="color" />
+            <Button label={t('button')} size="button-md" type="color" />
           </div>
           <div className="services__mobile-button">
             <Button size="button-arrow" type="color" />
@@ -30,7 +33,7 @@ const Services = () => {
               title={title}
               backgroundImg={backgroundImg}
               description={
-                description || "Learn more about our premium services"
+                description || "Description not available"
               }
             />
           ))}

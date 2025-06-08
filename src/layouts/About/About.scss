@@ -1,67 +1,49 @@
-@import "/src/styles.scss";
+@use "../../styles.scss";
 
 .about {
-  &__content {
-    @include content;
-    display: flex;
-    flex-direction: row;
-    max-width: 1280px;
-
-    justify-content: space-between;
-
-    .textArea {
-      display: flex;
-      flex-direction: column;
-      width: 600px;
-      gap: 48px;
-
-      @media (max-width: $breakpoint-mobile) {
-        max-width: 100%;
-      }
-    }
-
-    article {
-      display: flex;
-      flex-direction: column;
-      max-width: 600px;
-      gap: 32px;
-
-      h2 {
-        color: var(--color-gray-700);
-      }
-
-      p {
-        color: var(--color-gray-400);
-      }
-    }
-
-    .doubleList {
-      display: flex;
-      gap: 48px;
-
-      @media (max-width: $breakpoint-mobile) {
-        max-width: 377px;
-        gap: 24px;
-      }
-    }
-
-    .buttonsArea {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      gap: 16px;
-
-      @media (max-width: $breakpoint-mobile) {
-        display: none;
-      }
+  &__container {
+    @include styles.container;
+    & {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 
-  @media (max-width: $breakpoint-desktop) {
-    &__content {
-      .buttonsArea {
-        display: none;
-      }
+  &__textArea {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    max-width: 600px;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 600px;
+    &--text {
+      color: var(--color-gray-400);
+    }
+  }
+
+  &__doubleList {
+    display: flex;
+    gap: 48px;
+
+    @media (max-width: styles.$BREAKPOINT_MOBILE) {
+      max-width: 380px;
+      gap: 24px;
+    }
+  }
+
+  &__buttonsArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+
+    @media (max-width: styles.$BREAKPOINT_DESKTOP) {
+      display: none;
     }
   }
 }

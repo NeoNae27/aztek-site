@@ -1,14 +1,16 @@
-@import "/src/styles.scss";
+@use "../../styles.scss";
 
 .contacts {
   background-color: var(--color-primary-700);
   border-bottom: 2px solid var(--color-primary-600);
 
   &__container {
-    @include content;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
+    @include styles.container;
+    & {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
   }
 
   &__header {
@@ -26,7 +28,7 @@
     align-items: center;
     display: inline-flex;
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: styles.$BREAKPOINT_TABLET) {
       flex-direction: column;
     }
   }
@@ -45,12 +47,12 @@
     display: inline-flex;
     justify-content: space-between;
 
-    @media (max-width: $breakpoint-desktop) {
+    @media (max-width: styles.$BREAKPOINT_DESKTOP) {
       width: 100%;
       flex-direction: row;
     }
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: styles.$BREAKPOINT_TABLET) {
       width: 100%;
       flex-direction: column;
     }
@@ -61,12 +63,12 @@
     align-self: stretch;
     position: relative;
 
-    background-image: url("@assets/contacts-pic.png");
+    background-image: url("@assets/contacts-pic.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    @media (max-width: $breakpoint-desktop) {
+    @media (max-width: styles.$BREAKPOINT_DESKTOP) {
       display: none;
     }
   }

@@ -1,8 +1,6 @@
 import "./Footer.scss";
 import { Logo } from "@components";
 import {
-  AiFillFacebook,
-  AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
 
@@ -14,31 +12,20 @@ const Footer = () => {
           <div className="footer__info">
             <Logo />
             <p className="body2">
-              AZ1065, Bakı şəhəri, Azərbaycan, Bakıxanov küçəsi, 6, Bridge
-              Plaza, 4-cü mərtəbə
+              124C Khojasan Highway
+              Baku, Azerbaijan. AZ1063
             </p>
           </div>
+
+          {/* {TODO: Add linkedIn Account} */}
+
           <div className="footer__social">
             <a
-              href="https://www.linkedin.com/company/aztek-az/"
+              href="https://www.linkedin.com/company/aztek-mmc/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <AiFillLinkedin size={24} />
-            </a>
-            <a
-              href="https://www.instagram.com/aztek.az/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiFillInstagram size={24} />
-            </a>
-            <a
-              href="https://www.facebook.com/aztek.az/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiFillFacebook size={24} />
+              <AiFillLinkedin size={24} href="https://www.linkedin.com/company/aztek-mmc" target="blank" />
             </a>
           </div>
         </span>
@@ -48,7 +35,9 @@ const Footer = () => {
             <p className="body2">Privacy Policy</p>
           </div>
           <div className="author">
-            <a href="https://github.com/NeoNae27" className="body2">Made by Nick</a>
+            <a href="https://x.com/NeoNae27" target="blank" className="body2">
+              Made by Nick
+            </a>
           </div>
         </span>
       </div>

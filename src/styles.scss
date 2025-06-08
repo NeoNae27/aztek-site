@@ -1,11 +1,23 @@
-@import "./shared/colors.scss";
-@import "./shared/typography.scss";
+@use "./shared/colors.scss";
+@use "./shared/typography.scss";
 
-// Breakpoint variables
-$breakpoint-mobile: 652px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1024px;
-$breakpoint-HD: 1280px;
+// Variables
+$SPACING-XS: 4px;
+$SPACING-SM: 8px;
+$SPACING-MD: 16px;
+$SPACING-LG: 24px;
+$SPACING-XL: 32px;
+$SPACING-2XL: 48px;
+$SPACING-3XL: 64px;
+$SPACING-4XL: 80px;
+$SPACING-5XL: 96px;
+
+$BREAKPOINT_MOBILE: 652px;
+$BREAKPOINT_TABLET: 768px;
+$BREAKPOINT_DESKTOP: 1024px;
+$BREAKPOINT_HD: 1280px;
+
+$CONTAINER_MAX_WIDTH: 1280px;
 
 *,
 *::before,
@@ -24,11 +36,20 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-family);
   background-color: var(--color-gray-100);
   color: var(--color-gray-700);
   line-height: 1.5;
   min-height: 100vh;
+}
+
+.lazyload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 64px;
 }
 
 // Global section styling
@@ -37,23 +58,6 @@ section {
   border-bottom: 2px solid var(--color-special-shadow);
 }
 
-@mixin content {
-  max-width: 1280px;
-  padding: 96px 80px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-
-  @media (max-width: $breakpoint-tablet) {
-    padding: 80px 56px;
-  }
-
-  @media (max-width: $breakpoint-mobile) {
-    padding: 48px 24px;
-  }
-}
-
-// Global link styling
 a {
   text-decoration: none;
   color: inherit;
@@ -72,9 +76,38 @@ li {
   padding: 0;
 }
 
-// Image handling
 img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+button {
+  border: none;
+}
+
+// Mixins
+@mixin container {
+  max-width: $CONTAINER_MAX_WIDTH;
+  padding: $SPACING-5XL $SPACING-4XL;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $BREAKPOINT_TABLET) {
+    padding: $SPACING-4XL $SPACING-3XL;
+  }
+
+  @media (max-width: $BREAKPOINT_MOBILE) {
+    padding: $SPACING-2XL $SPACING-LG;
+  }
+}
+
+@mixin bg-cover($image: null) {
+  @if $image {
+    background-image: url($image);
+  }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

@@ -1,47 +1,46 @@
 import "./Contacts.scss";
-import contactImg from "../../assets/contacts-pic.png";
 import { SectionArticle, Phone } from "@components";
+import { useTranslation } from "react-i18next";
 
 /**
- * Contacts section with equal height columns
+ * Contacts section
  * @returns {JSX.Element} Contacts component
  */
 const Contacts = () => {
+  const { t } = useTranslation("contactsLayout");
+
   return (
-    <section id="#contacts" className="contacts">
+    <section id="contacts" className="contacts">
       <div className="contacts__container">
         <header className="contacts__header">
           <SectionArticle
-            title="Contact Us"
-            subtitle="We are here to help you with your projects. Get in touch with us!"
+            title={t("contacts.title")}
+            subtitle={t("contacts.subtitle")}
           />
         </header>
 
         <div className="contacts__area">
           <div className="contacts__block">
             <article className="contacts__info">
-              <h5 className="contacts__title">OUR LOCATION</h5>
+              <h5 className="contacts__title">{t("contacts.address.title")}</h5>
               <p className="body1">
-                AZ1065, Bakı şəhəri, Azərbaycan, <br /> Bakıxanov küçəsi, 6,
-                Bridge Plaza, 4-cü mərtəbə
+                124C Khojasan Highway Baku, Azerbaijan. AZ1063
               </p>
             </article>
 
             <article className="contacts__info">
-              <h5 className="contacts__title">CONTACTS</h5>
+              <h5 className="contacts__title">{t("contacts.email.title")}</h5>
               <p className="body1">Email: office@aztek.az</p>
             </article>
 
             <div className="contacts__phone">
               <p className="body1">
-                We will get back to you within 24 hours, or call us every day,
-                09:00 - 24:00
+                {t("contacts.phone.text")}
               </p>
               <Phone />
             </div>
           </div>
-          <div className="contacts__img">
-          </div>
+          <div className="contacts__img"></div>
         </div>
       </div>
     </section>

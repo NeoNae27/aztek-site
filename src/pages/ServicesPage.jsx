@@ -41,7 +41,7 @@ const ServicesPage = () => {
       <Hero
         backgroundImage={heroImage}
         title="Our Services"
-        subtitle={t("service.subtitle")}
+        subtitle={t("services.subtitle")}
       />
       <ServicesDesc />
 

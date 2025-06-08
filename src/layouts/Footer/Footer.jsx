@@ -21,7 +21,7 @@ const Footer = () => {
 
           <div className="footer__social">
             <a
-              href="https://www.linkedin.com/company/aztek-az/"
+              href="https://www.linkedin.com/company/aztek-mmc/"
               target="_blank"
               rel="noopener noreferrer"
             >

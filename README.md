@@ -1,7 +1,3 @@
-Below is a detailed set of instructions that you (or any developer joining the project) can follow to understand the project structure and build the site using Vite.
-
----
-
 ## 1. Project Structure
 
 The **Aztek-Site** repository is organized to provide a clear separation between source code, assets, and build configuration. Here’s a typical breakdown of the folders and files you’ll encounter:

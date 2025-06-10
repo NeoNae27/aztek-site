@@ -3,7 +3,6 @@ import path from "path";
 
 // Function to convert folder name to camelCase key
 function toCamelCase(str) {
-  console.log(`Converting "${str}" to camelCase...`);
   return str
     .replace(/[^a-zA-Z0-9\s]/g, "") // Remove special characters
     .replace(/\s+/g, " ") // Replace multiple spaces with single space
@@ -18,25 +17,23 @@ function toCamelCase(str) {
     .join("");
 }
 
-// Function to scan directory and generate JSON structure
-function generateAztekDocsJson(baseDir = "./AZTEK-DOCS") {
-  console.log(`Generating JSON from directory: ${baseDir}`);
+// Function to scan a category directory and generate JSON structure
+function scanCategoryDirectory(categoryPath, baseDir, categoryName) {
   const result = {};
 
   try {
-    // Check if directory exists
-    if (!fs.existsSync(baseDir)) {
-      console.error(`Directory ${baseDir} does not exist`);
+    if (!fs.existsSync(categoryPath)) {
+      console.warn(`Category directory ${categoryPath} does not exist`);
       return result;
     }
 
-    // Read all subdirectories
-    const items = fs.readdirSync(baseDir, { withFileTypes: true });
+    // Read all subdirectories in the category
+    const items = fs.readdirSync(categoryPath, { withFileTypes: true });
     const directories = items.filter((item) => item.isDirectory());
 
     directories.forEach((dir) => {
       const dirName = dir.name;
-      const dirPath = path.join(baseDir, dirName);
+      const dirPath = path.join(categoryPath, dirName);
 
       // Generate camelCase key from directory name
       const key = toCamelCase(dirName);
@@ -56,7 +53,7 @@ function generateAztekDocsJson(baseDir = "./AZTEK-DOCS") {
           file.toLowerCase().endsWith(".pdf")
         );
         if (pdfFile) {
-          result[key].doc = `${baseDir}/${dirName}/${pdfFile}`;
+          result[key].doc = `${baseDir}/${categoryName}/${dirName}/${pdfFile}`;
         }
 
         // Find first image file (0.jpg or first available image)
@@ -68,14 +65,51 @@ function generateAztekDocsJson(baseDir = "./AZTEK-DOCS") {
           // Prefer 0.jpg if it exists, otherwise use the first image
           const preferredImage =
             imageFiles.find((file) => file === "0.jpg") || imageFiles[0];
-          result[key].img = `${baseDir}/${dirName}/${preferredImage}`;
+          result[
+            key
+          ].img = `${baseDir}/${categoryName}/${dirName}/${preferredImage}`;
         }
       } catch (error) {
         console.error(`Error reading directory ${dirPath}:`, error.message);
       }
     });
   } catch (error) {
-    console.error(`Error reading base directory ${baseDir}:`, error.message);
+    console.error(
+      `Error reading category directory ${categoryPath}:`,
+      error.message
+    );
+  }
+
+  return result;
+}
+
+// Function to generate JSON structure for both letters and certificates
+function generateAztekDocsJson(baseDir = "./AZTEK-DOCS") {
+  const result = {
+    letters: {},
+    certificates: {},
+  };
+
+  try {
+    // Check if base directory exists
+    if (!fs.existsSync(baseDir)) {
+      console.error(`Base directory ${baseDir} does not exist`);
+      return result;
+    }
+
+    // Process letters directory
+    const lettersPath = path.join(baseDir, "letters");
+    result.letters = scanCategoryDirectory(lettersPath, baseDir, "letters");
+
+    // Process certificates directory
+    const certificatesPath = path.join(baseDir, "certificates");
+    result.certificates = scanCategoryDirectory(
+      certificatesPath,
+      baseDir,
+      "certificates"
+    );
+  } catch (error) {
+    console.error(`Error processing base directory ${baseDir}:`, error.message);
   }
 
   return result;
@@ -109,13 +143,22 @@ function main() {
   // Save to file
   saveJsonToFile(aztekDocsData);
 
+  const totalDocs =
+    Object.keys(aztekDocsData.letters).length +
+    Object.keys(aztekDocsData.certificates).length;
+  console.log(`\nTotal documents processed: ${totalDocs}`);
+  console.log(`Letters: ${Object.keys(aztekDocsData.letters).length}`);
   console.log(
-    `\nTotal documents processed: ${Object.keys(aztekDocsData).length}`
+    `Certificates: ${Object.keys(aztekDocsData.certificates).length}`
   );
 }
 
 // Export functions for use in other modules
-export { generateAztekDocsJson, saveJsonToFile, toCamelCase };
+export {
+  generateAztekDocsJson,
+  saveJsonToFile,
+  toCamelCase,
+  scanCategoryDirectory,
+};
 
-// Run the script if called directly (ESM equivalent)
 main();

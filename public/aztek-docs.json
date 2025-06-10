@@ -1,66 +1,70 @@
 {
-  "aztekMayeVeTebiiQazTesserufatiObyektlerininQurashdirilmasi": {
-    "doc": "./AZTEK-DOCS/AZTEK Maye ve tebii qaz tesserufati obyektlerinin qurashdirilmasi/AZTEK Maye ve tebii qaz tesserufati obyektlerinin qurashdirilmasi.pdf",
-    "img": "./AZTEK-DOCS/AZTEK Maye ve tebii qaz tesserufati obyektlerinin qurashdirilmasi/0.jpg"
+  "letters": {
+    "aztektvsiyMktubu": {
+      "doc": "./AZTEK-DOCS/letters/Aztek-Tövsiyə məktubu/Aztek-Tövsiyə məktubu.pdf",
+      "img": "./AZTEK-DOCS/letters/Aztek-Tövsiyə məktubu/0.jpg"
+    },
+    "bsRecomend": {
+      "doc": "./AZTEK-DOCS/letters/BS recomend/BS recomend.pdf",
+      "img": "./AZTEK-DOCS/letters/BS recomend/0.jpg"
+    },
+    "fencing": {
+      "doc": "./AZTEK-DOCS/letters/Fencing/Fencing.pdf",
+      "img": "./AZTEK-DOCS/letters/Fencing/0.jpg"
+    },
+    "slbRecomendation": {
+      "doc": "./AZTEK-DOCS/letters/SLB recomendation/SLB recomendation.pdf",
+      "img": "./AZTEK-DOCS/letters/SLB recomendation/0.jpg"
+    },
+    "stp1": {
+      "doc": "./AZTEK-DOCS/letters/STP 1/STP 1.pdf",
+      "img": "./AZTEK-DOCS/letters/STP 1/0.jpg"
+    },
+    "saipemRecomend": {
+      "doc": "./AZTEK-DOCS/letters/Saipem recomend/Saipem recomend.pdf",
+      "img": "./AZTEK-DOCS/letters/Saipem recomend/0.jpg"
+    },
+    "technpRecommendation": {
+      "doc": "./AZTEK-DOCS/letters/TECHNİP Recommendation/TECHNİP Recommendation.pdf",
+      "img": "./AZTEK-DOCS/letters/TECHNİP Recommendation/0.jpg"
+    },
+    "declarationOfPartnershipAlfaTotal": {
+      "doc": "./AZTEK-DOCS/letters/declaration of partnership alfa total/declaration of partnership alfa total.pdf",
+      "img": "./AZTEK-DOCS/letters/declaration of partnership alfa total/0.jpg"
+    },
+    "letterPetrochem": {
+      "doc": "./AZTEK-DOCS/letters/letter PETROCHEM/letter PETROCHEM.pdf",
+      "img": "./AZTEK-DOCS/letters/letter PETROCHEM/0.jpg"
+    },
+    "2025012412565890": {
+      "doc": "./AZTEK-DOCS/letters/РК20250124_12565890/РК20250124_12565890.pdf",
+      "img": "./AZTEK-DOCS/letters/РК20250124_12565890/0.jpg"
+    }
   },
-  "aztek18001": {
-    "doc": "./AZTEK-DOCS/AZTEK18001/AZTEK 18001.pdf",
-    "img": "./AZTEK-DOCS/AZTEK18001/0.jpg"
-  },
-  "aztekLlcIso": {
-    "doc": "./AZTEK-DOCS/Aztek LLC ISO/Aztek LLC ISO.pdf",
-    "img": "./AZTEK-DOCS/Aztek LLC ISO/0.jpg"
-  },
-  "aztektvsiyMktubu": {
-    "doc": "./AZTEK-DOCS/Aztek-Tövsiyə məktubu/Aztek-Tövsiyə məktubu.pdf",
-    "img": "./AZTEK-DOCS/Aztek-Tövsiyə məktubu/0.jpg"
-  },
-  "aztekiso2024": {
-    "doc": "./AZTEK-DOCS/AztekIso2024/AztekIso2024.pdf",
-    "img": "./AZTEK-DOCS/AztekIso2024/0.jpg"
-  },
-  "bsRecomend": {
-    "doc": "./AZTEK-DOCS/BS recomend/BS recomend.pdf",
-    "img": "./AZTEK-DOCS/BS recomend/0.jpg"
-  },
-  "fencing": {
-    "doc": "./AZTEK-DOCS/Fencing/Fencing.pdf",
-    "img": "./AZTEK-DOCS/Fencing/0.jpg"
-  },
-  "licenceMes": {
-    "doc": "./AZTEK-DOCS/LICENCE MES/LICENCE MES.pdf",
-    "img": "./AZTEK-DOCS/LICENCE MES/0.jpg"
-  },
-  "licenceMesAttachment": {
-    "doc": "./AZTEK-DOCS/LICENCE MES attachment/LICENCE MES attachment.pdf",
-    "img": "./AZTEK-DOCS/LICENCE MES attachment/0.jpg"
-  },
-  "slbRecomendation": {
-    "doc": "./AZTEK-DOCS/SLB recomendation/SLB recomendation.pdf",
-    "img": "./AZTEK-DOCS/SLB recomendation/0.jpg"
-  },
-  "stp1": {
-    "doc": "./AZTEK-DOCS/STP 1/STP 1.pdf",
-    "img": "./AZTEK-DOCS/STP 1/0.jpg"
-  },
-  "saipemRecomend": {
-    "doc": "./AZTEK-DOCS/Saipem recomend/Saipem recomend.pdf",
-    "img": "./AZTEK-DOCS/Saipem recomend/0.jpg"
-  },
-  "technpRecommendation": {
-    "doc": "./AZTEK-DOCS/TECHNİP Recommendation/TECHNİP Recommendation.pdf",
-    "img": "./AZTEK-DOCS/TECHNİP Recommendation/0.jpg"
-  },
-  "declarationOfPartnershipAlfaTotal": {
-    "doc": "./AZTEK-DOCS/declaration of partnership alfa total/declaration of partnership alfa total.pdf",
-    "img": "./AZTEK-DOCS/declaration of partnership alfa total/0.jpg"
-  },
-  "letterPetrochem": {
-    "doc": "./AZTEK-DOCS/letter PETROCHEM/letter PETROCHEM.pdf",
-    "img": "./AZTEK-DOCS/letter PETROCHEM/0.jpg"
-  },
-  "2025012412565890": {
-    "doc": "./AZTEK-DOCS/РК20250124_12565890/РК20250124_12565890.pdf",
-    "img": "./AZTEK-DOCS/РК20250124_12565890/0.jpg"
+  "certificates": {
+    "aztekMayeVeTebiiQazTesserufatiObyektlerininQurashdirilmasi": {
+      "doc": "./AZTEK-DOCS/certificates/AZTEK Maye ve tebii qaz tesserufati obyektlerinin qurashdirilmasi/AZTEK Maye ve tebii qaz tesserufati obyektlerinin qurashdirilmasi.pdf",
+      "img": "./AZTEK-DOCS/certificates/AZTEK Maye ve tebii qaz tesserufati obyektlerinin qurashdirilmasi/0.jpg"
+    },
+    "aztek18001": {
+      "doc": "./AZTEK-DOCS/certificates/AZTEK18001/AZTEK 18001.pdf",
+      "img": "./AZTEK-DOCS/certificates/AZTEK18001/0.jpg"
+    },
+    "aztekLlcIso": {
+      "doc": "./AZTEK-DOCS/certificates/Aztek LLC ISO/Aztek LLC ISO.pdf",
+      "img": "./AZTEK-DOCS/certificates/Aztek LLC ISO/0.jpg"
+    },
+    "aztekiso2024": {
+      "doc": "./AZTEK-DOCS/certificates/AztekIso2024/AztekIso2024.pdf",
+      "img": "./AZTEK-DOCS/certificates/AztekIso2024/0.jpg"
+    },
+    "licenceMes": {
+      "doc": "./AZTEK-DOCS/certificates/LICENCE MES/LICENCE MES.pdf",
+      "img": "./AZTEK-DOCS/certificates/LICENCE MES/0.jpg"
+    },
+    "licenceMesAttachment": {
+      "doc": "./AZTEK-DOCS/certificates/LICENCE MES attachment/LICENCE MES attachment.pdf",
+      "img": "./AZTEK-DOCS/certificates/LICENCE MES attachment/0.jpg"
+    }
   }
 }

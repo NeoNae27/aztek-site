@@ -4,25 +4,36 @@ import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import { Footer } from "@layouts";
 import heroImage from "@assets/portfolio-hero-img.webp";
+import docsData from "./../../public/aztek-docs.json";
+
 
 const DocsGallery = lazy(() =>
   import("../layouts/Gallery/DocsGallery/DocsGallery.jsx")
 );
 
 const CertificatesPage = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(["certificatesPage"]);
 
   return (
     <>
       <Hero
         backgroundImage={heroImage}
         title={"Certificate And Letters"}
-        subtitle={t("projects.subtitle")}
+        subtitle={t("certificatesBanner.subtitle")}
       />
       <Suspense
         fallback={<div className="caption1 lazyload">Loading Gallery...</div>}
       >
-        <DocsGallery title="Certificate" subtitle="Our certificate and licence" />
+        <DocsGallery 
+          title="Certificates" 
+          subtitle="Our certificates and licenses" 
+          docs={docsData.certificates} 
+        />
+        <DocsGallery 
+          title="Letters" 
+          subtitle="Our recommendation letters" 
+          docs={docsData.letters} 
+        />
       </Suspense>
       <Footer />
     </>

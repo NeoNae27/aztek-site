@@ -15,6 +15,9 @@ import mainPageAz from './locales/az/pages/mainPage.json';
 import companyPageEn from './locales/en/pages/companyPage.json';
 import companyPageAz from './locales/az/pages/companyPage.json';
 
+import certificatesPageEn from './locales/en/pages/certificatesPage.json';
+import certificatesPageAz from './locales/az/pages/certificatesPage.json';
+
 import aboutLayoutEn from './locales/en/layouts/aboutLayout.json';
 import aboutLayoutAz from './locales/az/layouts/aboutLayout.json';
 import servicesLayoutEn from './locales/en/layouts/servicesLayout.json';
@@ -37,6 +40,7 @@ i18n
         navigation: navigationEn,
         
         mainPage: mainPageEn,
+        certificatesPage: certificatesPageEn,
         
         aboutLayout: aboutLayoutEn,
         servicesLayout: servicesLayoutEn,
@@ -51,6 +55,7 @@ i18n
         navigation: navigationAz,
         mainPage: mainPageAz,
         company: companyPageAz,
+        certificatesPage: certificatesPageAz,
         
         aboutLayout: aboutLayoutAz,
         servicesLayout: servicesLayoutAz,

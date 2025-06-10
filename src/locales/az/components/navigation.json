@@ -1,9 +1,10 @@
 {
   "nav": {
     "home": "Baş Səhifə",
-    "company": "Şirkət",
+    "company": "Haqqımızda",
     "services": "Xidmətlər",
     "portfolio": "Portfolio",
+    "certificates": "Sertifikatlar",
     "contact": "Əlaqə"
   }
 }

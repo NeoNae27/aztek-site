@@ -14,6 +14,7 @@ const Header = () => {
     { name: t("nav.company"), url: "/company" },
     { name: t("nav.services"), url: "/services" },
     { name: t("nav.portfolio"), url: "/portfolio" },
+    { name: t("nav.certificates"), url: "/certificates" },
     { name: t("nav.contact"), url: "/#contacts" },
   ];
 

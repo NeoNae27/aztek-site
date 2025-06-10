@@ -4,6 +4,7 @@ import MainPage from "./pages/MainPage.jsx";
 import PortfolioPage from "./pages/PortfolioPage.jsx";
 import CompanyPage from "./pages/CompanyPage.jsx";
 import ServicesPage from "./pages/ServicesPage.jsx";
+import CertificatesPage from "./pages/CertificatesPage.jsx";
 
 
 function ScrollToHash() {
@@ -31,6 +32,7 @@ function App() {
       <Routes>
         <Route index element={<MainPage />} />
         <Route path="portfolio" element={<PortfolioPage />} />
+        <Route path="certificates" element={<CertificatesPage />} />
         <Route path="company" element={<CompanyPage />} /> 
         <Route path="services" element={<ServicesPage />} />
       </Routes>

@@ -2,12 +2,12 @@ import docs from "../../../../public/aztek-docs.json";
 import { DocsCard, SectionArticle } from "@components";
 import "./DocsGallery.scss";
 
-const DocsGallery = () => {
+const DocsGallery = ({ title, subtitle }) => {
   return (
     <div className="docs-gallery">
       <SectionArticle
-        title="Certificates and Letters"
-        subtitle="Check out our achievements"
+        title={title}
+        subtitle={subtitle}
       />
       <div className="docs-gallery__container">
         {Object.entries(docs).map(([key, doc], index) => (

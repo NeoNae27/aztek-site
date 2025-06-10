@@ -1,9 +1,10 @@
 {
   "nav": {
     "home": "Home",
-    "company": "Company",
+    "company": "About Us",
     "services": "Services",
     "portfolio": "Portfolio",
+    "certificates": "Certificates",
     "contact": "Contact"
   }
 }

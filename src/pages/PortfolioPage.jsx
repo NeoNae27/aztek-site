@@ -51,11 +51,6 @@ const PortfolioPage = () => {
       >
         <Gallery />
       </Suspense>
-      <Suspense
-        fallback={<div className="caption1 lazyload">Loading Gallery...</div>}
-      >
-        <DocsGallery />
-      </Suspense>
       <Footer />
     </>
   );

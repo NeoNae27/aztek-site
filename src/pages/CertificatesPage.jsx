@@ -18,7 +18,7 @@ const CertificatesPage = () => {
     <>
       <Hero
         backgroundImage={heroImage}
-        title={"Certificate And Letters"}
+        title={"Certificates And Letters"}
         subtitle={t("certificatesBanner.subtitle")}
       />
       <Suspense

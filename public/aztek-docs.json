@@ -41,7 +41,16 @@
       "img": "./AZTEK-DOCS/letters/РК20250124_12565890/0.jpg"
     }
   },
+
   "certificates": {
+    "licenceMes": {
+      "doc": "./AZTEK-DOCS/certificates/LICENCE MES/LICENCE MES.pdf",
+      "img": "./AZTEK-DOCS/certificates/LICENCE MES/0.jpg"
+    },
+    "licenceMesAttachment": {
+      "doc": "./AZTEK-DOCS/certificates/LICENCE MES attachment/LICENCE MES attachment.pdf",
+      "img": "./AZTEK-DOCS/certificates/LICENCE MES attachment/0.jpg"
+    },
     "aztekMayeVeTebiiQazTesserufatiObyektlerininQurashdirilmasi": {
       "doc": "./AZTEK-DOCS/certificates/AZTEK Maye ve tebii qaz tesserufati obyektlerinin qurashdirilmasi/AZTEK Maye ve tebii qaz tesserufati obyektlerinin qurashdirilmasi.pdf",
       "img": "./AZTEK-DOCS/certificates/AZTEK Maye ve tebii qaz tesserufati obyektlerinin qurashdirilmasi/0.jpg"
@@ -57,14 +66,6 @@
     "aztekiso2024": {
       "doc": "./AZTEK-DOCS/certificates/AztekIso2024/AztekIso2024.pdf",
       "img": "./AZTEK-DOCS/certificates/AztekIso2024/0.jpg"
-    },
-    "licenceMes": {
-      "doc": "./AZTEK-DOCS/certificates/LICENCE MES/LICENCE MES.pdf",
-      "img": "./AZTEK-DOCS/certificates/LICENCE MES/0.jpg"
-    },
-    "licenceMesAttachment": {
-      "doc": "./AZTEK-DOCS/certificates/LICENCE MES attachment/LICENCE MES attachment.pdf",
-      "img": "./AZTEK-DOCS/certificates/LICENCE MES attachment/0.jpg"
     }
   }
 }

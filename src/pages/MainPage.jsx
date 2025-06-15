@@ -2,11 +2,12 @@ import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 
-import { Hero } from "@templates";
-import { About, Projects, Contacts, Footer } from "@layouts";
 import heroImage from "@assets/main-pic.jpg";
+import { Hero } from "@templates";
+import { About, Contacts, Footer } from "@layouts";
 
 const Services = lazy(() => import(`../layouts/Services/Service.jsx`));
+const Projects = lazy(() => import(`../layouts/Projects/Projects.jsx`));
 
 const MainPage = () => {
   const { t } = useTranslation("mainPage");
@@ -38,9 +39,7 @@ const MainPage = () => {
             name: "AZTEK",
             url: "https://aztek.com",
             logo: "https://aztek.com/public/aztek-logo.svg",
-            sameAs: [
-              "https://www.linkedin.com/company/aztek-mmc/",
-            ],
+            sameAs: ["https://www.linkedin.com/company/aztek-mmc/"],
           })}
         </script>
       </Helmet>
@@ -57,7 +56,11 @@ const MainPage = () => {
       >
         <Services />
       </Suspense>
-      <Projects />
+      <Suspense
+        fallback={<div className="caption1 lazyload">Loading Projects...</div>}
+      >
+        <Projects />
+      </Suspense>
       <Contacts />
       <Footer />
     </>

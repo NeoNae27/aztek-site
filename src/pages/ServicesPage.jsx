@@ -44,7 +44,6 @@ const ServicesPage = () => {
         subtitle={t("services.subtitle")}
       />
       <ServicesDesc />
-
       <Footer />
     </>
   );

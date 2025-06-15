@@ -10,12 +10,9 @@ const CompanyPage = () => {
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>AZTEK - Company</title>
-        <meta
-          name="description"
-          content="Powering Industry Since 2004"
-        />
+        <meta name="description" content="Powering Industry Since 2004" />
         <meta
           name="keywords"
           content="company, services, about us, SOCAR, BP, ITV, Technip Energies, Pasha Holding, Certificates, Lukoil, projects, building, Azerbaijan, maintenance, ventilation, painting, reconstruction, B2B, Manpower supply, Engineering"

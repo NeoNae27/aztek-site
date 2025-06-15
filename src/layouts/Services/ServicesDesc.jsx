@@ -5,14 +5,18 @@ import { SectionArticle } from "@components";
 const ServicesDesc = () => {
   const { t } = useTranslation(["services"]);
   const services = t("services:list", { returnObjects: true });
+  console.log(services);
 
   return (
     <section id="services-desc" className="services-desc">
       <div className="services-desc__container">
-        {services.map(({ title, description }) => (
+        {services.map(({ title, description, backgroundImg }) => (
           <article key={title} className="services-desc__article">
-            <h5 className="sevice-desc__title">{title}</h5>
-            <p className="">{description}</p>
+            <img src={backgroundImg} />
+            <span className="services-desc__text">
+              <h5 className="services-desc__title">{title}</h5>
+              <p className="">{description}</p>
+            </span>
           </article>
         ))}
       </div>

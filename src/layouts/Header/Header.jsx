@@ -10,7 +10,6 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: t("nav.home"), url: "/" },
     { name: t("nav.company"), url: "/company" },
     { name: t("nav.services"), url: "/services" },
     { name: t("nav.portfolio"), url: "/portfolio" },

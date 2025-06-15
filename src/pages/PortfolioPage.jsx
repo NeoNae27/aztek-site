@@ -3,7 +3,7 @@ import { Hero } from "@templates";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import { Footer, DocsGallery } from "@layouts";
-import heroImage from "@assets/portfolio-hero-img.webp";
+import heroImage from "@assets/portfolio-hero-img.jpg";
 
 const Gallery = lazy(() => import(`../layouts/Gallery/Gallery.jsx`));
 

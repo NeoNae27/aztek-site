@@ -3,7 +3,7 @@ import { Hero } from "@templates";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import { Footer } from "@layouts";
-import heroImage from "@assets/portfolio-hero-img.webp";
+import heroImage from "@assets/certificates-page-img.jpg";
 import docsData from "./../../public/aztek-docs.json";
 
 

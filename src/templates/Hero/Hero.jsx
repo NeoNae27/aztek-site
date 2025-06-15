@@ -1,16 +1,19 @@
 import "./Hero.scss";
-import Header from "../../layouts/Header/Header.jsx";
-import Banner from "../../layouts/Banner/Banner.jsx";
+import { Header, Banner } from "@layouts";
 
-
-const Hero = ({ backgroundImage, title, subtitle, buttonText }) => {
+const Hero = ({ backgroundImage, title, subtitle, buttonText, buttonHref }) => {
   return (
     <div
       className="hero"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <Header />
-      <Banner title={title} subtitle={subtitle} buttonText={buttonText} buttonHref="/portfolio" />
+      <Banner
+        title={title}
+        subtitle={subtitle}
+        buttonText={buttonText}
+        buttonHref={buttonHref}
+      />
     </div>
   );
 };

@@ -1,8 +1,9 @@
 import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
+
 import { Hero } from "@templates";
 import { About, Projects, Contacts, Footer } from "@layouts";
-import { useTranslation } from "react-i18next";
 import heroImage from "@assets/main-pic.jpg";
 
 const Services = lazy(() => import(`../layouts/Services/Service.jsx`));
@@ -48,6 +49,7 @@ const MainPage = () => {
         title={"Where Engineering Meets Enterprise"}
         subtitle={t("mainBanner.subtitle")}
         buttonText={t("mainBanner.button")}
+        buttonHref="/portfolio"
       />
       <About />
       <Suspense

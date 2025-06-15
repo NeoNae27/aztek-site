@@ -1,6 +1,7 @@
 @use "./shared/colors.scss";
 @use "./shared/typography.scss";
 
+// Global variables
 $BREAKPOINT_MOBILE: 652px;
 $BREAKPOINT_TABLET: 768px;
 $BREAKPOINT_DESKTOP: 1024px;
@@ -8,6 +9,7 @@ $BREAKPOINT_HD: 1280px;
 
 $CONTAINER_MAX_WIDTH: 1280px;
 
+// Global section styling
 *,
 *::before,
 *::after {
@@ -41,7 +43,6 @@ body {
   margin-top: 64px;
 }
 
-// Global section styling
 section {
   width: 100%;
   border-bottom: 2px solid var(--color-special-shadow);

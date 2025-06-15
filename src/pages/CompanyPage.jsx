@@ -5,7 +5,7 @@ import { Footer, TextContainer } from "@layouts";
 import heroImage from "@assets/about-hero-img.jpg";
 
 const CompanyPage = () => {
-  const { t } = useTranslation(["company"]);
+  const { t } = useTranslation(["companyPage"]);
   const paragraphs = t("aboutText", { returnObjects: true });
 
   return (

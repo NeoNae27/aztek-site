@@ -4,7 +4,8 @@ import MainPage from "./pages/MainPage.jsx";
 import PortfolioPage from "./pages/PortfolioPage.jsx";
 import CompanyPage from "./pages/CompanyPage.jsx";
 import ServicesPage from "./pages/ServicesPage.jsx";
-
+import CertificatesPage from "./pages/CertificatesPage.jsx";
+import NotFoundPage from "./pages/NotFoundPage.jsx";
 
 function ScrollToHash() {
   const location = useLocation();
@@ -24,13 +25,26 @@ function ScrollToHash() {
   return null;
 }
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <BrowserRouter>
       <ScrollToHash />
+      <ScrollToTop />
       <Routes>
         <Route index element={<MainPage />} />
+        <Route path="*" element={<NotFoundPage />} />
         <Route path="portfolio" element={<PortfolioPage />} />
+        <Route path="certificates" element={<CertificatesPage />} />
         <Route path="company" element={<CompanyPage />} /> 
         <Route path="services" element={<ServicesPage />} />
       </Routes>

@@ -1,15 +1,42 @@
-import docs from "../../../../public/aztek-docs.json";
 import { DocsCard, SectionArticle } from "@components";
+import { useEffect, useRef } from "react";
 import "./DocsGallery.scss";
 
-const DocsGallery = () => {
+const DocsGallery = ({ title, subtitle, docs }) => {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const handleWheel = (e) => {
+      const hasHorizontalScroll = container.scrollWidth > container.clientWidth;
+      
+      if (hasHorizontalScroll && window.innerWidth >= 768) {
+        e.preventDefault();
+        
+        const scrollAmount = e.deltaY;
+        container.scrollLeft += scrollAmount;
+      }
+    };
+
+    container.addEventListener('wheel', handleWheel, { passive: false });
+
+    return () => {
+      container.removeEventListener('wheel', handleWheel);
+    };
+  }, []);
+
   return (
     <div className="docs-gallery">
       <SectionArticle
-        title="Certificates and Letters"
-        subtitle="Check out our achievements"
+        title={title}
+        subtitle={subtitle}
       />
-      <div className="docs-gallery__container">
+      <div 
+        className="docs-gallery__container"
+        ref={containerRef}
+      >
         {Object.entries(docs).map(([key, doc], index) => (
           <DocsCard
             className="docs-gallery__card"

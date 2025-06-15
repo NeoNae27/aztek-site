@@ -1,17 +1,7 @@
 @use "./shared/colors.scss";
 @use "./shared/typography.scss";
 
-// Variables
-$SPACING-XS: 4px;
-$SPACING-SM: 8px;
-$SPACING-MD: 16px;
-$SPACING-LG: 24px;
-$SPACING-XL: 32px;
-$SPACING-2XL: 48px;
-$SPACING-3XL: 64px;
-$SPACING-4XL: 80px;
-$SPACING-5XL: 96px;
-
+// Global variables
 $BREAKPOINT_MOBILE: 652px;
 $BREAKPOINT_TABLET: 768px;
 $BREAKPOINT_DESKTOP: 1024px;
@@ -19,6 +9,7 @@ $BREAKPOINT_HD: 1280px;
 
 $CONTAINER_MAX_WIDTH: 1280px;
 
+// Global section styling
 *,
 *::before,
 *::after {
@@ -52,7 +43,6 @@ body {
   margin-top: 64px;
 }
 
-// Global section styling
 section {
   width: 100%;
   border-bottom: 2px solid var(--color-special-shadow);
@@ -89,17 +79,17 @@ button {
 // Mixins
 @mixin container {
   max-width: $CONTAINER_MAX_WIDTH;
-  padding: $SPACING-5XL $SPACING-4XL;
+  padding: 96px 80px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 
   @media (max-width: $BREAKPOINT_TABLET) {
-    padding: $SPACING-4XL $SPACING-3XL;
+    padding: 80px 64px;
   }
 
   @media (max-width: $BREAKPOINT_MOBILE) {
-    padding: $SPACING-2XL $SPACING-LG;
+    padding: 48px 24px;
   }
 }
 

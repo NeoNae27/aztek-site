@@ -1,11 +1,13 @@
 import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet";
-import { Hero } from "@templates";
-import { About, Projects, Contacts, Footer } from "@layouts";
 import { useTranslation } from "react-i18next";
+
 import heroImage from "@assets/main-pic.jpg";
+import { Hero } from "@templates";
+import { About, Contacts, Footer } from "@layouts";
 
 const Services = lazy(() => import(`../layouts/Services/Service.jsx`));
+const Projects = lazy(() => import(`../layouts/Projects/Projects.jsx`));
 
 const MainPage = () => {
   const { t } = useTranslation("mainPage");
@@ -20,7 +22,7 @@ const MainPage = () => {
         />
         <meta
           name="keywords"
-          content="company, about us, projects, building, Azerbaijan, maintenance, ventilation, painting, reconstruction, B2B, Manpower supply, Engineering"
+          content="company, QHSE, Keyfiyyət, Səhiyyə, Təhlükəsizlik, Ətraf Mühit, STP, Alfa/Zeman Celik, ABB, ISO 9001,  OHSAS 18001 , services, about us, SOCAR, BP, ITV, Technip Energies, Pasha Holding, Certificates, Lukoil, projects, building, Azerbaijan, maintenance, ventilation, painting, reconstruction, B2B, Manpower supply, Engineering"
         />
         <meta
           property="og:image"
@@ -37,9 +39,7 @@ const MainPage = () => {
             name: "AZTEK",
             url: "https://aztek.com",
             logo: "https://aztek.com/public/aztek-logo.svg",
-            sameAs: [
-              "https://www.linkedin.com/company/aztek-mmc/",
-            ],
+            sameAs: ["https://www.linkedin.com/company/aztek-mmc/"],
           })}
         </script>
       </Helmet>
@@ -48,6 +48,7 @@ const MainPage = () => {
         title={"Where Engineering Meets Enterprise"}
         subtitle={t("mainBanner.subtitle")}
         buttonText={t("mainBanner.button")}
+        buttonHref="/portfolio"
       />
       <About />
       <Suspense
@@ -55,7 +56,11 @@ const MainPage = () => {
       >
         <Services />
       </Suspense>
-      <Projects />
+      <Suspense
+        fallback={<div className="caption1 lazyload">Loading Projects...</div>}
+      >
+        <Projects />
+      </Suspense>
       <Contacts />
       <Footer />
     </>

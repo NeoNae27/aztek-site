@@ -8,12 +8,139 @@
 
   &__container {
     display: flex;
-    gap: 48px;
-
     flex-direction: row;
     justify-content: flex-start;
     overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    
+    // Base card styles
+    & > .docs-gallery__card {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+    }
+    
+    // Desktop styles (1024px+)
+    @media (min-width: 1024px) {
+      gap: 48px;
+      
+      & > .docs-gallery__card {
+        min-width: 350px;
+        flex: 0 0 350px;
+      }
+      
+      // Custom scrollbar styling
+      &::-webkit-scrollbar {
+        height: 8px;
+      }
+      
+      &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        transition: background-color 0.2s ease;
+        
+        &:hover {
+          background: rgba(0, 0, 0, 0.5);
+        }
+      }
+      
+      padding-bottom: 16px;
+      cursor: grab;
+      
+      &:active {
+        cursor: grabbing;
+      }
+    }
+    
+    // Tablet styles (768px - 1023px)
+    @media (min-width: 768px) and (max-width: 1023px) {
+      gap: 32px;
+      
+      & > .docs-gallery__card {
+        min-width: 300px;
+        flex: 0 0 300px;
+      }
+      
+      &::-webkit-scrollbar {
+        height: 6px;
+      }
+      
+      &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+      }
+      
+      padding-bottom: 12px;
+    }
+    
+    // Mobile styles (480px - 767px)
+    @media (min-width: 480px) and (max-width: 767px) {
+      gap: 24px;
+      padding: 0 20px;
+      
+      & > .docs-gallery__card {
+        min-width: 280px;
+        flex: 0 0 280px;
+      }
+      
+      &::-webkit-scrollbar {
+        height: 4px;
+      }
+      
+      &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 2px;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
+        
+        &:active {
+          background: rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+    
+    // Small mobile styles (max 479px)
+    @media (max-width: 479px) {
+      gap: 20px;
+      padding: 0 16px;
+      
+      & > .docs-gallery__card {
+        min-width: 260px;
+        flex: 0 0 260px;
+      }
+      
+      &::-webkit-scrollbar {
+        height: 3px;
+      }
+      
+      &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 1.5px;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 1.5px;
+        
+        &:active {
+          background: rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
   }
 }

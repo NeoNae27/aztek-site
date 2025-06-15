@@ -10,14 +10,14 @@ const ServicesPage = () => {
   return (
     <>
       <Helmet>
-        <title>AZTEK - Main Page</title>
+        <title>AZTEK - Services Page</title>
         <meta
           name="description"
           content="We provide a wide range of services. From small to fundamental works"
         />
         <meta
           name="keywords"
-          content="company, services, about us, projects, building, Azerbaijan, maintenance, ventilation, painting, reconstruction, B2B, Manpower supply, Engineering"
+          content="company, services, about us, projects, building, Azerbaijan, maintenance, ventilation, painting, reconstruction, B2B, Manpower supply, Engineering, Avadanlıq İcarəsi, Tikinti Təmir İşləri, İşçi Qüvvəsi Təminatı, Mühəndislik Xidmətləri, Texniki Xidmət, Servis, Material təminatı"
         />
         <meta
           property="og:image"
@@ -44,7 +44,6 @@ const ServicesPage = () => {
         subtitle={t("services.subtitle")}
       />
       <ServicesDesc />
-
       <Footer />
     </>
   );

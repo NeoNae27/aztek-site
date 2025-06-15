@@ -22,7 +22,7 @@ const Services = () => {
             <Button label={t('servicesLayout:button')} size="button-md" type="color" href="/services" />
           </div>
           <div className="services__mobile-button">
-            <Button size="button-arrow" type="color" />
+            <Button size="button-arrow" type="color" href="/services" />
           </div>
         </header>
 

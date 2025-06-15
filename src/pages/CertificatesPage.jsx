@@ -1,19 +1,31 @@
+import { lazy, Suspense } from "react";
 import { Hero } from "@templates";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
+import { Footer } from "@layouts";
 
-import heroImage from "@assets/about-hero-img.jpg";
-import { Footer, TextContainer } from "@layouts";
+import heroImage from "@assets/certificates-page-img.jpg";
+import docsData from "./../../public/aztek-docs.json";
 
-const CompanyPage = () => {
-  const { t } = useTranslation(["companyPage"]);
-  const paragraphs = t("aboutText", { returnObjects: true });
+const DocsGallery = lazy(() =>
+  import("../layouts/Gallery/DocsGallery/DocsGallery.jsx")
+);
+
+const CertificatesPage = () => {
+  const { t } = useTranslation(["certificatesPage"]);
 
   return (
     <>
       <Helmet>
-        <title>AZTEK - Company</title>
-        <meta name="description" content="Powering Industry Since 2004" />
+        <title>AZTEK - Certificates</title>
+        <meta
+          name="description"
+          content="Nailiyyətlərimiz haqqında daha çox məlumat əldə edin"
+        />
+        <meta
+          name="description"
+          content="Find out more about our achievements"
+        />
         <meta
           name="keywords"
           content="company, QHSE, Keyfiyyət, Səhiyyə, Təhlükəsizlik, Ətraf Mühit, STP, Alfa/Zeman Celik, ABB, ISO 9001,  OHSAS 18001 , services, about us, SOCAR, BP, ITV, Technip Energies, Pasha Holding, Certificates, Lukoil, projects, building, Azerbaijan, maintenance, ventilation, painting, reconstruction, B2B, Manpower supply, Engineering"
@@ -31,7 +43,7 @@ const CompanyPage = () => {
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "AZTEK",
-            url: "https://aztek.com/company",
+            url: "https://aztek.com/portfolio",
             logo: "https://aztek.com/public/aztek-logo.svg",
             sameAs: ["https://www.linkedin.com/company/aztek-mmc/"],
           })}
@@ -39,13 +51,26 @@ const CompanyPage = () => {
       </Helmet>
       <Hero
         backgroundImage={heroImage}
-        title={"Company Profile"}
-        subtitle={t("aboutBanner.subtitle")}
+        title={"Certificates And Letters"}
+        subtitle={t("certificatesBanner.subtitle")}
       />
-      <TextContainer paragraphs={paragraphs} />
+      <Suspense
+        fallback={<div className="caption1 lazyload">Loading Gallery...</div>}
+      >
+        <DocsGallery
+          title="Certificates"
+          subtitle="Our certificates and licenses"
+          docs={docsData.certificates}
+        />
+        <DocsGallery
+          title="Letters"
+          subtitle="Our recommendation letters"
+          docs={docsData.letters}
+        />
+      </Suspense>
       <Footer />
     </>
   );
 };
 
-export default CompanyPage;
+export default CertificatesPage;

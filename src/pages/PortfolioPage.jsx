@@ -1,9 +1,10 @@
-import { lazy, Suspense } from "react";
 import { Hero } from "@templates";
 import { Helmet } from "react-helmet";
+import { lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
-import { Footer, DocsGallery } from "@layouts";
+
 import heroImage from "@assets/portfolio-hero-img.jpg";
+import { Footer } from "@layouts";
 
 const Gallery = lazy(() => import(`../layouts/Gallery/Gallery.jsx`));
 
@@ -13,14 +14,18 @@ const PortfolioPage = () => {
   return (
     <>
       <Helmet>
-        <title>AZTEK - Portfolio</title>
+        <title>AZTEK - Projects</title>
         <meta
           name="description"
           content="We provide a wide range of services. From small to fundamental works"
         />
         <meta
+          name="description"
+          content="Biz geniş spektrli xidmətlər təqdim edirik. Kiçikdən fundamental işlərə qədər"
+        />
+        <meta
           name="keywords"
-          content="company, services, about us, SOCAR, BP, ITV, Technip Energies, Pasha Holding, Certificates, Lukoil, projects, building, Azerbaijan, maintenance, ventilation, painting, reconstruction, B2B, Manpower supply, Engineering"
+          content="company, QHSE, Keyfiyyət, Səhiyyə, Təhlükəsizlik, Ətraf Mühit, STP, Alfa/Zeman Celik, ABB, ISO 9001,  OHSAS 18001 , services, about us, SOCAR, BP, ITV, Technip Energies, Pasha Holding, Certificates, Lukoil, projects, building, Azerbaijan, maintenance, ventilation, painting, reconstruction, B2B, Manpower supply, Engineering"
         />
         <meta
           property="og:image"

@@ -1,8 +1,9 @@
-import { useTranslation } from "react-i18next";
 import { Hero } from "@templates";
 import { Helmet } from "react-helmet";
-import { Footer, TextContainer } from "@layouts";
+import { useTranslation } from "react-i18next";
+
 import heroImage from "@assets/about-hero-img.jpg";
+import { Footer, TextContainer } from "@layouts";
 
 const CompanyPage = () => {
   const { t } = useTranslation(["companyPage"]);
@@ -15,7 +16,7 @@ const CompanyPage = () => {
         <meta name="description" content="Powering Industry Since 2004" />
         <meta
           name="keywords"
-          content="company, services, about us, SOCAR, BP, ITV, Technip Energies, Pasha Holding, Certificates, Lukoil, projects, building, Azerbaijan, maintenance, ventilation, painting, reconstruction, B2B, Manpower supply, Engineering"
+          content="company, QHSE, Keyfiyyət, Səhiyyə, Təhlükəsizlik, Ətraf Mühit, STP, Alfa/Zeman Celik, ABB, ISO 9001,  OHSAS 18001 , services, about us, SOCAR, BP, ITV, Technip Energies, Pasha Holding, Certificates, Lukoil, projects, building, Azerbaijan, maintenance, ventilation, painting, reconstruction, B2B, Manpower supply, Engineering"
         />
         <meta
           property="og:image"

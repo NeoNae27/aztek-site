@@ -61,7 +61,7 @@ const Header = () => {
                   </li>
                 </ul>
               </nav>
-              <Phone />
+              <Phone number="+994 (55) 214 24 42" />
             </>
           )}
 
@@ -104,7 +104,7 @@ const Header = () => {
               </li>
             </ul>
             <div className="mobile-menu__phone">
-              <Phone />
+              <Phone number="+994 (55) 214 24 42" />
             </div>
           </nav>
         </div>

@@ -1,19 +1,14 @@
 {
   "list": [
     {
-      "title": "Avadanlıq İcarəsi",
-      "backgroundImg": "./servicesImg/1.webp",
-      "description": "Ən müasir tikinti və texniki avadanlıqların qısa və uzunmüddətli icarəsini təklif edirik. Müştərilərimiz üçün sərfəli şərtlərlə texnika və xüsusi alətlər təqdim edirik. Etibarlılıq və geniş seçim imkanları ilə xidmətinizdəyik."
-    },
-    {
       "title": "Tikinti və Təmir İşləri",
       "backgroundImg": "./servicesImg/2.jpg",
       "description": "Tikinti və təmir işlərini peşəkar komandamızla keyfiyyətli şəkildə həyata keçiririk. Müasir texnologiyalar və təcrübəli mütəxəssislər sayəsində işlərinizi vaxtında və yüksək dəqiqliklə tamamlayırıq."
     },
     {
-      "title": "İşçi Qüvvəsi Təminatı",
-      "backgroundImg": "./servicesImg/3.webp",
-      "description": "İstehsalat, tikinti, logistika və digər sahələr üçün etibarlı və təcrübəli işçi qüvvəsi təqdim edirik. Qısa və uzunmüddətli işçi tələblərinə çevik həllər və peşəkar seçim imkanları ilə cavab veririk."
+      "title": "Texniki Xidmət və Servis",
+      "backgroundImg": "./servicesImg/5.webp",
+      "description": "Avadanlıqlarınızın fasiləsiz işləməsini təmin etmək üçün profilaktik baxım, təmir və servis xidmətləri göstəririk. İstər sənaye sistemləri, istər infrastruktur – peşəkar texniki heyətimizlə məhsuldarlığınızı qoruyuruq."
     },
     {
       "title": "Mühəndislik Xidmətləri",
@@ -21,9 +16,14 @@
       "description": "Struktur, elektrik, mexaniki və inşaat mühəndisliyi üzrə kompleks həllər təqdim edirik. Layihələndirmədən texniki nəzarətə qədər bütün mərhələlərdə sizə dəstək oluruq."
     },
     {
-      "title": "Texniki Xidmət və Servis",
-      "backgroundImg": "./servicesImg/5.webp",
-      "description": "Avadanlıqlarınızın fasiləsiz işləməsini təmin etmək üçün profilaktik baxım, təmir və servis xidmətləri göstəririk. İstər sənaye sistemləri, istər infrastruktur – peşəkar texniki heyətimizlə məhsuldarlığınızı qoruyuruq."
+      "title": "İşçi Qüvvəsi Təminatı",
+      "backgroundImg": "./servicesImg/3.webp",
+      "description": "İstehsalat, tikinti, logistika və digər sahələr üçün etibarlı və təcrübəli işçi qüvvəsi təqdim edirik. Qısa və uzunmüddətli işçi tələblərinə çevik həllər və peşəkar seçim imkanları ilə cavab veririk."
+    },
+    {
+      "title": "Avadanlıq İcarəsi",
+      "backgroundImg": "./servicesImg/1.webp",
+      "description": "Ən müasir tikinti və texniki avadanlıqların qısa və uzunmüddətli icarəsini təklif edirik. Müştərilərimiz üçün sərfəli şərtlərlə texnika və xüsusi alətlər təqdim edirik. Etibarlılıq və geniş seçim imkanları ilə xidmətinizdəyik."
     },
     {
       "title": "Material təminatı",

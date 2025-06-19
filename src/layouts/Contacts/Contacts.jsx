@@ -37,7 +37,9 @@ const Contacts = () => {
               <p className="body1">
                 {t("contacts.phone.text")}
               </p>
-              <Phone />
+              <Phone number="+994 (55) 214 24 42" />
+              <Phone number="+994 (12) 565 50 05" />
+
             </div>
           </div>
           <div className="contacts__img"></div>

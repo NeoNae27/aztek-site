@@ -3,19 +3,21 @@
 .docs-gallery {
   @include styles.container;
   & {
-    gap: 48px;
+    gap: 36px;
   }
 
   &__container {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    flex-direction: column;
+    // justify-content: flex-start;
+    // overflow-x: auto;
+    // overflow-y: hidden;
+    // scroll-behavior: smooth;
+    // scroll-snap-type: x mandatory;
+    // -webkit-overflow-scrolling: touch;
     
+
+
     // Base card styles
     & > .docs-gallery__card {
       flex: 0 0 auto;
@@ -140,6 +142,49 @@
         &:active {
           background: rgba(0, 0, 0, 0.4);
         }
+      }
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    justify-content: center;
+    align-items: start;
+    justify-items: center;
+    gap: 16px;
+    min-height: 300px; // Prevent layout shift during loading
+
+    // Large screens
+    @media (max-width: styles.$BREAKPOINT_HD) {
+      .project-card {
+        width: 100%;
+        height: fit-content;
+      }
+    }
+
+    // Tablet and below - vertical stacking
+    @media (max-width: styles.$BREAKPOINT_TABLET) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .project-card {
+        width: 100%;
+        min-height: fit-content;
+        flex-direction: row;
+      }
+    }
+
+    @media (max-width: styles.$BREAKPOINT_MOBILE) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .project-card {
+        width: 100%;
+        min-height: fit-content;
+        flex-direction: column;
       }
     }
   }

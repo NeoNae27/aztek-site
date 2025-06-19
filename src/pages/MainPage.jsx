@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 
-import heroImage from "@assets/main-pic.jpg";
+import heroImage from "@assets/main-pic-blue.jpg";
 import { Hero } from "@templates";
 import { About, Contacts, Footer } from "@layouts";
 

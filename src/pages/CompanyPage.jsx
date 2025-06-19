@@ -2,7 +2,7 @@ import { Hero } from "@templates";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 
-import heroImage from "@assets/about-hero-img.jpg";
+import heroImage from "@assets/about-hero-img-blue.jpg";
 import { Footer, TextContainer } from "@layouts";
 
 const CompanyPage = () => {

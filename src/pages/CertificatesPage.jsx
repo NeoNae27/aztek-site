@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import { Footer } from "@layouts";
 
-import heroImage from "@assets/certificates-page-img.jpg";
+import heroImage from "@assets/certificates-page-img-blue.jpg";
 import docsData from "./../../public/aztek-docs.json";
 
 const DocsGallery = lazy(() =>
@@ -51,20 +51,18 @@ const CertificatesPage = () => {
       </Helmet>
       <Hero
         backgroundImage={heroImage}
-        title={"Certificates And Letters"}
+        title={"Certificates And References"}
         subtitle={t("certificatesBanner.subtitle")}
       />
       <Suspense
         fallback={<div className="caption1 lazyload">Loading Gallery...</div>}
       >
         <DocsGallery
-          title="Certificates"
-          subtitle="Our certificates and licenses"
+          title="Certificates and Licenses "
           docs={docsData.certificates}
         />
         <DocsGallery
-          title="Letters"
-          subtitle="Our recommendation letters"
+          title="References"
           docs={docsData.letters}
         />
       </Suspense>
